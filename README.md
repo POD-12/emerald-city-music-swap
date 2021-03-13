@@ -38,7 +38,7 @@ REACT/MERN Group Project
 <!-- apllication usefullness  -->
 
 ## License
-<img src="https://img.shields.io/github/license/merikettapearl212/emerald_city_music_swap?style=for-the-badge" />
+<img src="https://img.shields.io/github/license/POD-12/emerald-city-music-swap?style=for-the-badge" />
     
 
 ## Contributions
