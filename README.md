@@ -1,29 +1,55 @@
-# Create React Express App
+<h1 align="center">Emerald City Music Swap</h1>
+<p align="center">
+    <img src="https://img.shields.io/github/repo-size/merikettapearl212/emerald_city_music_swap?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+    <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white/" />
+    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+    <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
+    <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" />
+    <img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white" />
+    <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" />
+    <img src="https://img.shields.io/badge/Express-404D59?style=for-the-badge&logo=express&logoColor=white" />
+    <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" />
+    <img src="https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white" />
+</p>
 
-## About This Boilerplate
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
+## Description
+REACT/MERN Group Project
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+## Deployed application
+<!-- [Employee Directory App](https://protected-lake-51847.herokuapp.com/) -->
 
-## Starting the app locally
+#### Screenshot of example
+<!-- <img src="src/team-generator.png" width="400" height="200"> -->
 
-Start by installing front and backend dependencies. While in this directory, run the following command:
+## Table of Contents
+- [Description](#description)
+- [Table of Contents](#table-of-contents)
+- [Deployed application](#deployed-application)
+- [Usage](#usage)
+- [License](#License)
+- [Contributions](#contributions)
+- [Questions](#questions)
 
-```
-npm install
-```
 
-This should install node modules within the server and the client folder.
+## Usage :computer:
+<!-- apllication usefullness  -->
 
-After both installations complete, run the following command in your terminal:
+## License
+<img src="https://img.shields.io/github/license/merikettapearl212/emerald_city_music_swap?style=for-the-badge" />
+    
 
-```
-npm start
-```
+## Contributions
+- [Gavin Calkins](https://github.com/Gavin867)
+- [Meagan James](https://github.com/merikettapearl212)
+- [Alejandro Brand](https://github.com/alejo-brand)
+- [Mia Dilberovic](https://github.com/Dilberovicka31)
 
-Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
+## Questions
 
-## Deployment (Heroku)
+ <br></br>
 
-To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
+#### Powered by :coffee: and <img src="https://img.shields.io/badge/Spotify-1ED760?&style=for-the-badge&logo=spotify&logoColor=white"/> 
+Thanks for stopping by! :vulcan_salute:
