@@ -11,7 +11,7 @@ function Signup() {
             <div className="sign-in text-center text-white pt-5 m-5" id="sign-in">
                 <h1>Welcome Back!</h1>
                 <p>To keep connected with us please login with your personal info</p>
-                <MDBBtn outline color="white">Login</MDBBtn>
+                <MDBBtn outline color="white" style={{borderRadius: "2rem"}}>Login</MDBBtn>
                 </div>
         </MDBCol>
 
@@ -45,9 +45,10 @@ function Signup() {
                 </label>
                 <input type="password" id="defaultFormRegisterPasswordEx" className="form-control" />
                 <div className="text-center mt-4">
-                <MDBBtn rounded type="submit">
+                <MDBBtn rounded type="submit" style={{borderRadius: "2rem"}}>
                     Sign up
                 </MDBBtn>
+               
                 </div>
             </form>
         </MDBCol>
