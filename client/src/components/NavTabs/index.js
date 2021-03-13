@@ -4,7 +4,7 @@ import { Nav, Navbar } from "react-bootstrap";
 
 function NavTabs() {
   return (
-    <Navbar className="mr-3 ml-3" expand="lg">
+    <Navbar expand="lg">
       <Navbar.Brand  href="/" style={{fontSize:"30px", color:"black"}}>Emerald City Music Swap </Navbar.Brand>
       <MDBNavbarNav right>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
