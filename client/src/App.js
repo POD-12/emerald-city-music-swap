@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import Home from "./pages/Home";
 
 import NavTabs from "./components/NavTabs"
@@ -12,14 +12,14 @@ import Login from "./components/Login";
 function App() {
   useAuthTokenStore()
   return (
-    <Router>
+   <div>
       <NavTabs />
       <Route exact path="/" component={Home} />
       <Route exact path ="/signup" component={Signup}/>
       <Route exact path ="/login" component={Login}/>
 
       <Footer />
-    </Router>
+    </div>
   );
 }
 
