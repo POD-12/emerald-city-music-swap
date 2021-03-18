@@ -1,4 +1,4 @@
-import { MDBCard, MDBCardBody, MDBCardText, MDBCol, MDBContainer, MDBRow } from "mdbreact";
+import { MDBCol, MDBContainer, MDBRow } from "mdbreact";
 import React from "react";
 import BeeGees from "../../images/Bee-Gees.jpeg";
 import Beetles from "../../images/Beetles.jpeg";
