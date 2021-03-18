@@ -1,11 +1,12 @@
 import { MDBBtn, MDBCol, MDBContainer, MDBRow, MDBIcon } from "mdbreact";
 import React from "react";
+import "./index.css"
 
 function Signup() {
   return (
     <MDBContainer className="shadow-box-example rounded z-depth-1-half mt-5">
       <MDBRow>
-        <MDBCol className="welcome-back-card aqua-gradient" md="6 p-5">
+        <MDBCol className="welcome-back-card gradient-custom" md="6 p-5">
           <div className="sign-in text-center text-white pt-5 m-5" id="sign-in">
             <h1>Welcome Back!</h1>
             <p>
