@@ -1,11 +1,16 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import NavTabs from "./components/NavTabs";
+
+import NavTabs from "./components/NavTabs"
+import {useAuthTokenStore} from "./utils/auth"
+
 import Footer from "./components/Footer";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
 
+
 function App() {
+  useAuthTokenStore()
   return (
     <Router>
       <NavTabs />
