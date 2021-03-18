@@ -1,17 +1,19 @@
 import { MDBNavbarNav } from "mdbreact";
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
+import mainlogo from "../../images/mainlogo.png"
 
 function NavTabs() {
   return (
     <Navbar expand="lg">
-      <Navbar.Brand
-        id="name"
-        className="animated fadeInLeft"
-        href="/"
-        style={{ fontSize: "30px", color: "black" }}
-      >
-        Emerald City Music Swap{" "}
+      <Navbar.Brand className="p-0">
+        <img
+          src={mainlogo}
+          className="img-fluid animated fadeInLeft"
+          href="/"
+          style={{ width: "12rem", height: "3rem"}}
+          alt=""
+              />
       </Navbar.Brand>
       <MDBNavbarNav right>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
