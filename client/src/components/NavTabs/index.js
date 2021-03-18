@@ -18,13 +18,13 @@ function NavTabs() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto animated fadeInLeft" id="name">
             <Nav.Link href="/" style={{ fontSize: "20px", color: "black" }}>
-              Logout
+              Home
             </Nav.Link>
-            <Nav.Link href="#" style={{ fontSize: "20px", color: "black" }}>
-              Something
+            <Nav.Link href="/signup" style={{ fontSize: "20px", color: "black" }}>
+              Signup
             </Nav.Link>
-            <Nav.Link href="#" style={{ fontSize: "20px", color: "black" }}>
-              Something
+            <Nav.Link href="/login" style={{ fontSize: "20px", color: "black" }}>
+              Login
             </Nav.Link>
             <Nav.Link href="#" style={{ fontSize: "20px", color: "black" }}>
               Something
