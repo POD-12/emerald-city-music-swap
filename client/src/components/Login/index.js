@@ -4,10 +4,10 @@ import { MDBContainer, MDBRow, MDBCol, MDBBtn } from "mdbreact";
 
 function Login() {
   return (
-    <MDBContainer>
+    <MDBContainer className="shadow-box-example rounded z-depth-1-half mt-5 mb-5">
       <MDBRow>
-        <MDBCol md="6">
-          <form>
+        <MDBCol md="6 md-offset-6"  className="text-center">
+          <form className="">
             <p className="h4 text-center mb-4">Sign in</p>
             <label htmlFor="defaultFormLoginEmailEx" className="grey-text">
               Your email
