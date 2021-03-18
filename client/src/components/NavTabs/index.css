@@ -1,0 +1,14 @@
+#name {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: name 2s linear 0s infinite alternate;
+}
+@keyframes name {
+  from {
+    width: 0;
+  }
+  to {
+    width: 150px;
+  }
+}
