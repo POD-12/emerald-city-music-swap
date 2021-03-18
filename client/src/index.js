@@ -5,10 +5,13 @@ import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {storeProvider} from './store';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <storeProvider>
+      <App />
+    </storeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
