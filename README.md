@@ -14,42 +14,89 @@
     <img src="https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white" />
 </p>
 
+![License Icon](https://img.shields.io/badge/license-MIT-informational.svg)
 
-## Description
-REACT/MERN Group Project
-
-## Deployed application
-<!-- [Employee Directory App](https://protected-lake-51847.herokuapp.com/) -->
-
-#### Screenshot of example
-<!-- <img src="src/team-generator.png" width="400" height="200"> -->
+A Seattle-based website for the music community to share records, CDs, tapes and music charts with one another.
 
 ## Table of Contents
-- [Description](#description)
-- [Table of Contents](#table-of-contents)
-- [Deployed application](#deployed-application)
-- [Usage](#usage)
-- [License](#License)
-- [Contributions](#contributions)
-- [Questions](#questions)
 
+- [Locations](#locations)
+- [Application Summary](#application-summary)
+- [Usage Instructions](#usage-instructions)
+- [Installation](#installation)
+- [Testing](#testing)
+- [Future Development](#future-development)
+- [Contributors](#contributors)
+- [Resources](#resources)
+- [Point of Contact](#point-of-contact)
+- [License](#license)
 
-## Usage :computer:
-<!-- apllication usefullness  -->
+## Locations
+
+Github Repository: https://github.com/POD-12/emerald-city-music-swap
+
+Deployed Application:
+
+## Application Summary
+
+A brief summary of the application...
+
+## Usage Instructions
+
+Steps explaining how to use the application...
+
+## Installation
+
+Steps explaining the local install...
+
+## Testing
+
+Steps explaining how to run the tests...
+
+## Future Development
+
+Ideas for future development...
+
+## Contributors
+
+- [Alejandro Brand](https://github.com/alejo-brand)
+- [Gavin Calkins](https://github.com/Gavin867)
+- [Mia Dilberovic](https://github.com/Dilberovicka31)
+- [Meagan James](https://github.com/merikettapearl212)
+
+## Resources
+
+- Lessons from UW Full Stack Flex Boot Camp.
+- Insights from instructor Anthony Brown.
+
+## Point of Contact
+<!-- possibly set it up for group email -->
+Have questions? Contact Gavin Calkins at [gavin.calkins@gmail.com](mailto:gavin.calkins@gmail.com?subject=Hi%20Gavin!%20I%20have%20a%20question%20about%20Emerald%20City%20Music%20Swap!).
 
 ## License
-<img src="https://img.shields.io/github/license/POD-12/emerald-city-music-swap?style=for-the-badge" />
+
+    MIT License
     
+    Copyright (c) 2021 Alejandro Brand, Gavin Calkins, Mia Dilberovic, Meagan James
 
-## Contributions
-- [Gavin Calkins](https://github.com/Gavin867)
-- [Meagan James](https://github.com/merikettapearl212)
-- [Alejandro Brand](https://github.com/alejo-brand)
-- [Mia Dilberovic](https://github.com/Dilberovicka31)
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+    
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+    
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
 
-## Questions
-
- <br></br>
 
 #### Powered by :coffee: and <img src="https://img.shields.io/badge/Spotify-1ED760?&style=for-the-badge&logo=spotify&logoColor=white"/> 
 Thanks for stopping by! :vulcan_salute:
