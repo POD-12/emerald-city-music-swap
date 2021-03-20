@@ -3,15 +3,18 @@ import ReactDOM from 'react-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
+import {BrowserRouter as Router} from "react-router-dom";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {storeProvider} from './store';
+import {StoreProvider} from './store';
 
 ReactDOM.render(
   <React.StrictMode>
-    <storeProvider>
-      <App />
-    </storeProvider>
+    <Router>
+      <StoreProvider>
+        <App />
+      </StoreProvider>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
