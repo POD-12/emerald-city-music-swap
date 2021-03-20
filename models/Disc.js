@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 const { Schema } = mongoose;
 
-const recordSchema = new Schema({
+const discSchema = new Schema({
     album:  {
         type: String, 
         required: true
@@ -31,3 +31,5 @@ const recordSchema = new Schema({
         default: Date.now
     },
 });
+
+module.exports = Disc = mongoose.model("disc", discSchema);

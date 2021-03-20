@@ -35,3 +35,5 @@ const recordSchema = new Schema({
         default: Date.now
     },
 });
+
+module.exports = Record = mongoose.model("record", recordSchema);
