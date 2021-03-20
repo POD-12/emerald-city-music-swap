@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 const { Schema } = mongoose;
 
-const recordSchema = new Schema({
+const cassetteSchema = new Schema({
     album:  {
         type: String, 
         required: true
@@ -35,3 +35,5 @@ const recordSchema = new Schema({
         default: Date.now
     },
 });
+
+module.exports = Cassette = mongoose.model("cassette", cassetteSchema);

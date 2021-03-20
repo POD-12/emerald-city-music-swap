@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 const { Schema } = mongoose;
 
-const recordSchema = new Schema({
+const chartSchema = new Schema({
     chartTitle:  {
         type: String, 
         required: true
@@ -47,3 +47,5 @@ const recordSchema = new Schema({
         default: Date.now
     },
 });
+
+module.exports = Chart = mongoose.model("chart", chartSchema);
