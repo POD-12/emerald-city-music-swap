@@ -29,3 +29,8 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/hipsterapp")
 app.listen(PORT, function() {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
 });
+
+io.on("connection", (socket) => {
+  console.log("new client connected");
+  socket.emit("connection", null);
+});
