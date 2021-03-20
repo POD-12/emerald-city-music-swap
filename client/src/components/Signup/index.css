@@ -1,0 +1,23 @@
+.welcome-back-card{
+    background-image: url("../../images/BGimage.jpeg");
+    background-size: cover;
+    background-blend-mode:overlay;
+    background-color: transparent;
+  
+  
+
+}
+p{
+    font-weight: bolder;
+    /* z-index: 99; */
+    padding: 15px;
+    color:#fff;
+    
+  
+   
+
+}
+body
+html{
+    min-height: 100%;
+}

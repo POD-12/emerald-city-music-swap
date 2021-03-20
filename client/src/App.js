@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route } from "react-router-dom";
+
 import Home from "./pages/Home";
 import NavTabs from "./components/NavTabs";
 import Footer from "./components/Footer";
@@ -10,21 +10,23 @@ import PrivateRoute from "./components/PrivateRoute";
 import LandingPage from "./components/LandingPage";
 
 
+
+
 function App() {
  const isAuthDone = useAuthTokenStore()
   return (
   <div>
 
     {isAuthDone && 
-    <Router>
+    <div>
       <NavTabs/>
-      <Route exact path="/" component={Home} />
-      <GuestRoute exact path ="/signup" component={Signup}/>
-      <GuestRoute exact path ="/login" component={Login}/>
+      <GuestRoute exact path="/" component={Home} redirectTo = "/userPage"/>
+      <GuestRoute exact path ="/signup" component={Signup} redirectTo = "/userPage"/>
+      <GuestRoute exact path ="/login" component={Login} redirectTo = "/userPage"/>
       <PrivateRoute exact path ="/userPage" component={LandingPage} redirectTo="/login"/>
-      
       <Footer />
-    </Router>
+    </div>
+
     }
   </div>
   )

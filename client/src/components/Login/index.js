@@ -29,7 +29,7 @@ function Login() {
 
   const login = useLogin();
   return (
-    <MDBContainer>
+    <MDBContainer className="shadow-box-example rounded z-depth-1-half mt-5 mb-5">
       <MDBRow>
         <MDBCol md="6">
           <form onSubmit = {handleSubmit}>

@@ -11,6 +11,7 @@ const setAuthToken = token => {
     storeAuthToken( token );
     applyAuthToken( token );
 
+
     return token ? jwt_decode(token) : undefined;
 
 }

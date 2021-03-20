@@ -3,9 +3,14 @@ import React from "react";
 
 function Footer() {
   return (
-    <MDBFooter>
-      <div className="text-center py-3">
-        <a
+    <MDBFooter className="font-small pt-4 black-text mt-5">
+      <MDBContainer>
+      
+    </MDBContainer>
+      <div className="footer-copyright text-center py-3">
+        <MDBContainer fluid>
+          <div>&copy; 2021 Copyright: POD 12</div>
+          <a
           style={{ color: "black" }}
           className="ml-5"
           target="_blank"
@@ -23,7 +28,6 @@ function Footer() {
           />
           Meagan James{" "}
         </a>
-
         <a
           style={{ color: "black" }}
           className="ml-5"
@@ -78,8 +82,7 @@ function Footer() {
           />
           Mia Dilberovic{" "}
         </a>
-        <MDBContainer fluid className="footer-copyright text-center py-3">
-          &copy; {new Date().getFullYear()} Copyright:  POD 12 
+
         </MDBContainer>
       </div>
     </MDBFooter>

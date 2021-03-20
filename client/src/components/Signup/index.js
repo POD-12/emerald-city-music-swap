@@ -29,20 +29,20 @@ function Signup() {
   }
 
   return (
-    <MDBContainer className="shadow-box-example rounded z-depth-1-half mt-5">
+    <MDBContainer className="shadow-box-example rounded z-depth-1-half mt-5 mb-5">
       <MDBRow>
-        <MDBCol className="welcome-back-card aqua-gradient" md="6 p-5">
+        <MDBCol className="welcome-back-card gradient-custom" md="6 p-5">
           <div className="sign-in text-center text-white pt-5 m-5" id="sign-in">
             <h1>Welcome Back!</h1>
             <p>
               To keep connected with us please login with your personal info
             </p>
-            <MDBBtn outline color="white" style={{ borderRadius: "2rem" }}>
+            <MDBBtn color="white" style={{ borderRadius: "2rem" }}>
               Login
             </MDBBtn>
           </div>
         </MDBCol>
-
+        
         <MDBCol md="6 p-5">
           <form onSubmit={handleSubmit}>
             <p className="h3 text-center mb-3 teal-text">Create Account</p>
@@ -106,7 +106,7 @@ function Signup() {
               ref = {passwordRef}
             />
             <div className="text-center mt-4">
-              <MDBBtn rounded type="submit" style={{ borderRadius: "2rem" }}>
+              <MDBBtn rounded type="submit" color="elegant" style={{ borderRadius: "2rem" }}>
                 Sign up
               </MDBBtn>
             </div>
