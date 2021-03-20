@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+const mongoose = require ('mongoose');
 const { Schema } = mongoose;
 
 const recordSchema = new Schema({
@@ -35,5 +35,5 @@ const recordSchema = new Schema({
         default: Date.now
     },
 });
-
-module.exports = Record = mongoose.model("record", recordSchema);
+const Record = mongoose.model("Record", recordSchema);
+module.exports = Record
