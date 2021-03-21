@@ -8,7 +8,8 @@ import { useAuthTokenStore } from "./utils/auth"
 import GuestRoute from "./components/GuestRoute";
 import PrivateRoute from "./components/PrivateRoute";
 import LandingPage from "./components/LandingPage";
-import Browse from "./components/Browse";
+import BrowseForm from "./components/BrowseForm";
+import CreatePost from "./components/CreatePost";
 
 
 
@@ -21,7 +22,8 @@ function App() {
     <div>
       <NavTabs/>
       <GuestRoute exact path="/" component={Home} redirectTo = "/userPage"/>
-      <GuestRoute exact path="/browse" component={Browse}/>
+      <GuestRoute exact path="/browse" component={BrowseForm} redirectTo = "/userPage"/>
+      <GuestRoute exact path="/createpost" component={CreatePost} redirectTo = "/userPage"/>
       <GuestRoute exact path ="/signup" component={Signup} redirectTo = "/userPage"/>
       <GuestRoute exact path ="/login" component={Login} redirectTo = "/userPage"/>
       <PrivateRoute exact path ="/userPage" component={LandingPage} redirectTo="/login"/>
