@@ -3,7 +3,9 @@ import React from "react";
 import {useRef} from 'react';
 import {useLogin} from "../../utils/auth"
 import api from "../../utils/API"
-import "./index.css";
+
+import "./index.css"
+
 
 function Signup() {
   const nameRef = useRef();
