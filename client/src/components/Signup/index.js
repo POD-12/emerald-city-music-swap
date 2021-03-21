@@ -3,6 +3,7 @@ import React from "react";
 import {useRef} from 'react';
 import {useLogin} from "../../utils/auth"
 import api from "../../utils/API"
+import "./index.css";
 
 function Signup() {
   const nameRef = useRef();
@@ -45,7 +46,7 @@ function Signup() {
         
         <MDBCol md="6 p-5">
           <form onSubmit={handleSubmit}>
-            <p className="h3 text-center mb-3 teal-text">Create Account</p>
+            <p className="h3 text-center mb-3 black-text">Create Account</p>
             <div className="text-center mb-3">
               <a href="#!" className="fa-lg p-1 m-.5 tw-ic">
                 <MDBIcon

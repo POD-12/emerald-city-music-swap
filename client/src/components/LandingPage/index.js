@@ -1,11 +1,15 @@
 import React from 'react';
+import Carousel from '../Carousel';
+import FeaturedCards from '../FeaturedCards';
 
 const LandingPage = () => {
 
     return (
-        <h1>
-            welcome!
-        </h1>
+        <div>
+      <Carousel />
+
+      <FeaturedCards />
+    </div>
     )
 }
 export default LandingPage;
