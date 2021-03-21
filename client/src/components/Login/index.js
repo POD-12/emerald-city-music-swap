@@ -54,7 +54,7 @@ function Login() {
               ref = {passwordRef}
             />
             <div className="text-center mt-4">
-              <MDBBtn color="indigo" type="submit">
+              <MDBBtn type="submit" style={{ borderRadius: "2rem" }}>
                 Login
               </MDBBtn>
             </div>

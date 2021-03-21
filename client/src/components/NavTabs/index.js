@@ -26,16 +26,15 @@ function NavTabs() {
           <Nav.Link href="/browse" style={{ fontSize: "20px", color: "black" }}>
               Browse
             </Nav.Link>
+            <Nav.Link href="/createpost" style={{ fontSize: "20px", color: "black" }}>
+              Add Item
+            </Nav.Link>
             {!isAuth && <Nav.Link href="/signup" style={{ fontSize: "20px", color: "black" }}>
               Signup
             </Nav.Link>}
             {!isAuth && <Nav.Link href="/login" style={{ fontSize: "20px", color: "black" }}>
               Login
             </Nav.Link>}
-
-            <Nav.Link href="#" style={{ fontSize: "20px", color: "black" }}>
-              Something
-            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </MDBNavbarNav>
