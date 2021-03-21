@@ -29,9 +29,9 @@ function Login() {
 
   const login = useLogin();
   return (
-    <MDBContainer className="shadow-box-example rounded z-depth-1-half mt-5 mb-5">
-      <MDBRow>
-        <MDBCol md="6">
+    <MDBContainer className="mt-5 mb-5">
+      <MDBRow className="d-flex justify-content-center">
+      <MDBCol md="6 p-5 mb-5 shadow-box-example rounded z-depth-1-half">
           <form onSubmit = {handleSubmit}>
             <p className="h4 text-center mb-4">Sign in</p>
             <label htmlFor="defaultFormLoginEmailEx" className="grey-text">
@@ -54,7 +54,7 @@ function Login() {
               ref = {passwordRef}
             />
             <div className="text-center mt-4">
-              <MDBBtn color="indigo" type="submit">
+              <MDBBtn color="black" type="submit" style={{ borderRadius: "2rem" }}>
                 Login
               </MDBBtn>
             </div>
