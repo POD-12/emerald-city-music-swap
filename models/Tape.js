@@ -2,39 +2,41 @@ const mongoose = require("mongoose");
 const { model } = require("./User");
 const { Schema } = mongoose;
 
-const discSchema = new Schema({
-    discDatePosted: {
+const tapeSchema = new Schema({
+    tapeDatePosted: {
         type: Date,
         default: Date.now
     },
-    discAlbumName:  {
+    tapeAlbumName:  {
         type: String,
         maxlength: 50,
         required: true
     },
-    discReleaseYear:  {
+    tapeReleaseYear:  {
         type: Number,
         minlength: 4,
         maxlength: 4,
         required: true
     },
-    discType: {
+    tapeType: {
         type: String, 
         enum: [
-            "Standard CD",
-            "CD-R",
-            "CD-RW",
+            "Cassette - Type 1",
+            "Cassette - Type 2",
+            "Cassete - Type 3",
+            "Cassete - Type 4",
+            "8-Track",
             "UNKOWN",
             "OTHER"
         ],
         required: true
     },
-    discArtist: {
+    tapeArtist: {
         type: String,
         maxlength: 50,
         required: true
     },
-    discGenre: {
+    tapeGenre: {
         type: String,
         enum: [
             "Alternative",
@@ -71,9 +73,9 @@ const discSchema = new Schema({
         ],
         required: true
     },
-    discCondition: {
+    tapeCondition: {
         type: String,
-        enum : [
+        enum: [
             "Mint", 
             "Near Mint", 
             "Excellent", 
@@ -85,12 +87,12 @@ const discSchema = new Schema({
         ],
         required: true
     },
-    discComments: [{ 
+    tapeComments: [{ 
         body: String,
         maxlength: 250,
         date: Date 
     }],
 });
 
-const Disc = mongoose.model("Disc", discSchema);
-model.exports = Disc;
+const Tape = mongoose.model("Tape", tapeSchema);
+module.exports = Tape
