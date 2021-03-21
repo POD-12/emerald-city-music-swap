@@ -1,4 +1,4 @@
-import { MDBNavbarNav } from "mdbreact";
+import { MDBDropdown, MDBDropdownItem, MDBDropdownMenu, MDBDropdownToggle, MDBNavbarNav } from "mdbreact";
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import { useIsAuthenticated } from "../../utils/auth";
@@ -34,9 +34,22 @@ function NavTabs() {
             </Nav.Link>}
             {!isAuth && <Nav.Link href="/login" style={{ fontSize: "20px", color: "black" }}>
               Login
-            </Nav.Link>}
+
+           </Nav.Link>}
           </Nav>
+         <MDBDropdown>
+                <MDBDropdownToggle nav caret>
+                  <span className="mr-2">Dropdown</span>
+                </MDBDropdownToggle>
+                <MDBDropdownMenu>
+                  <MDBDropdownItem href="/records">Record</MDBDropdownItem>
+                  <MDBDropdownItem href="/cassette">Cassette</MDBDropdownItem>
+                  <MDBDropdownItem href="/disc">Disc</MDBDropdownItem>
+                  <MDBDropdownItem href="chart">Chart</MDBDropdownItem>
+                </MDBDropdownMenu>
+              </MDBDropdown>
         </Navbar.Collapse>
+       
       </MDBNavbarNav>
     </Navbar>
   );
