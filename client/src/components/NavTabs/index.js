@@ -26,23 +26,24 @@ function NavTabs() {
           <Nav.Link href="/browse" style={{ fontSize: "20px", color: "black" }}>
               Browse
             </Nav.Link>
-            <Nav.Link href="/createpost" style={{ fontSize: "20px", color: "black" }}>
-              Add Item
-            </Nav.Link>
-            {!isAuth && <Nav.Link href="/signup" style={{ fontSize: "20px", color: "black" }}>
-              Signup
-            </Nav.Link>}
-            {!isAuth && <Nav.Link href="/login" style={{ fontSize: "20px", color: "black" }}>
-              Login
-
-           </Nav.Link>}
-          </Nav>
-         <MDBDropdown>
+            </Nav>
+           <MDBDropdown>
                 <MDBDropdownToggle nav caret>
-                  <span className="mr-2">Dropdown</span>
+                  <span className="mr-2" style={{ fontSize: "20px", color: "black" }}>Account</span>
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
-                  <MDBDropdownItem href="/records">Record</MDBDropdownItem>
+                {!isAuth && <MDBDropdownItem href="/login">Login</MDBDropdownItem>}
+                {!isAuth && <MDBDropdownItem href="/signup">Signup</MDBDropdownItem>}
+                  <MDBDropdownItem href="/disc">Logout</MDBDropdownItem>
+                </MDBDropdownMenu>
+              </MDBDropdown>
+          
+         <MDBDropdown>
+                <MDBDropdownToggle nav caret>
+                  <span className="mr-2" style={{ fontSize: "20px", color: "black" }}>Add Item</span>
+                </MDBDropdownToggle>
+                <MDBDropdownMenu>
+                  <MDBDropdownItem href="/createpost">Record</MDBDropdownItem>
                   <MDBDropdownItem href="/cassette">Cassette</MDBDropdownItem>
                   <MDBDropdownItem href="/disc">Disc</MDBDropdownItem>
                   <MDBDropdownItem href="chart">Chart</MDBDropdownItem>
