@@ -89,6 +89,11 @@ const discSchema = new Schema({
         maxlength: 250,
         date: Date 
     }],
+    discPosterContact: {
+        type: String,
+        maxlength: 50,
+        required: true
+    }
 });
 
 const Disc = mongoose.model("Disc", discSchema);

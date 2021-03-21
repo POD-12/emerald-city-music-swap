@@ -100,6 +100,11 @@ const recordSchema = new Schema({
         maxlength: 250,
         date: Date 
     }],
+    recordPosterContact: {
+        type: String,
+        maxlength: 50,
+        required: true
+    }
 });
 
 const Record = mongoose.model("Record", recordSchema);

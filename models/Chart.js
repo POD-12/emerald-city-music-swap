@@ -189,6 +189,11 @@ const chartSchema = new Schema({
         maxlength: 250,
         date: Date
     }],
+    chartPosterContact: {
+        type: String,
+        maxlength: 50,
+        required: true
+    }
 });
 
 const Chart = mongoose.model("Chart", chartSchema);

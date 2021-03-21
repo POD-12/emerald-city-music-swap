@@ -91,6 +91,11 @@ const tapeSchema = new Schema({
         maxlength: 250,
         date: Date 
     }],
+    tapePosterContact: {
+        type: String,
+        maxlength: 50,
+        required: true
+    }
 });
 
 const Tape = mongoose.model("Tape", tapeSchema);
