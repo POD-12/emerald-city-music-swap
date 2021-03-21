@@ -28,6 +28,7 @@ router.post("/authenticated", authenticateUser, (req,res)=>{
 router.post("/login", validateBodyWith(loginValidator), async(req,res)=>{
  
   const {email,password} = req.body;
+  console.log(req.body);
 
   try{
     const user = 
@@ -68,7 +69,7 @@ router.post("/login", validateBodyWith(loginValidator), async(req,res)=>{
 
     return res.json({
       sucess:true,
-      token: "Bearer" + token,
+      token: "Bearer " + token,
       user:secureUser
     })
   }catch(err){
@@ -82,8 +83,9 @@ router.post("/login", validateBodyWith(loginValidator), async(req,res)=>{
 // creates a new user for authentication 
 
 router.post("/register", validateBodyWith(registerValidator), async(req,res)=>{
+  console.log(req.body)
   try{
-    const { email, password } = req.body;
+    const { name, email, password } = req.body;
 
     const user = await User.findOne({ email });
 
@@ -93,6 +95,7 @@ router.post("/register", validateBodyWith(registerValidator), async(req,res)=>{
     }
 
     const newUser = new User({
+      name,
       email,
       password: await passwordHash( password )
     });

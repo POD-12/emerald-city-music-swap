@@ -10,6 +10,7 @@ import { StoreProvider } from "./store";
 
 ReactDOM.render(
   <React.StrictMode>
+    
     <Router>
       <StoreProvider>
         <App />

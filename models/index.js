@@ -2,6 +2,6 @@ module.exports = {
     User: require("./User"),
     Record: require("./Record"),
     Disc: require("./Disc"),
-    Cassette: require("./Cassette"),
+    Tape: require("./Tape"),
     Chart: require("./Chart")
   };
