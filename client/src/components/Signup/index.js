@@ -1,8 +1,33 @@
 import { MDBBtn, MDBCol, MDBContainer, MDBRow, MDBIcon } from "mdbreact";
 import React from "react";
-import "./index.css"
+import {useRef} from 'react';
+import {useLogin} from "../../utils/auth"
+import api from "../../utils/API"
 
 function Signup() {
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const passwordRef = useRef();
+
+  const login = useLogin();
+
+  const handleSubmit = async event =>{
+    event.preventDefault();
+    const name = nameRef.current.value
+    const email = emailRef.current.value;
+    const password = passwordRef.current.value;
+
+    try{
+      //register the user
+      await api.register({name,email,password});
+      //user registered succesfully, now log them in with the same info 
+      await login({email,password})
+    }catch(err){
+
+      if(err.response && err.response.data) console.log(err.response.data);
+    }
+  }
+
   return (
     <MDBContainer className="shadow-box-example rounded z-depth-1-half mt-5 mb-5">
       <MDBRow>
@@ -19,8 +44,8 @@ function Signup() {
         </MDBCol>
         
         <MDBCol md="6 p-5">
-          <form>
-            <p className="h3 text-center mb-3 black-text">Create Account</p>
+          <form onSubmit={handleSubmit}>
+            <p className="h3 text-center mb-3 teal-text">Create Account</p>
             <div className="text-center mb-3">
               <a href="#!" className="fa-lg p-1 m-.5 tw-ic">
                 <MDBIcon
@@ -55,6 +80,7 @@ function Signup() {
               type="text"
               id="defaultFormRegisterNameEx"
               className="form-control"
+              ref = {nameRef}
             />
             <br />
             <label htmlFor="defaultFormRegisterEmailEx" className="grey-text">
@@ -64,6 +90,7 @@ function Signup() {
               type="email"
               id="defaultFormRegisterEmailEx"
               className="form-control"
+              ref = {emailRef}
             />
             <br />
             <label
@@ -76,6 +103,7 @@ function Signup() {
               type="password"
               id="defaultFormRegisterPasswordEx"
               className="form-control"
+              ref = {passwordRef}
             />
             <div className="text-center mt-4">
               <MDBBtn rounded type="submit" color="elegant" style={{ borderRadius: "2rem" }}>

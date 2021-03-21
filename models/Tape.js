@@ -1,5 +1,4 @@
-const mongoose = require("mongoose");
-const { model } = require("./User");
+const mongoose = require ('mongoose');
 const { Schema } = mongoose;
 
 const tapeSchema = new Schema({

@@ -1,5 +1,4 @@
-const mongoose = require("mongoose");
-const { model } = require("./User");
+const mongoose = require ('mongoose');
 const { Schema } = mongoose;
 
 const recordSchema = new Schema({
@@ -104,4 +103,4 @@ const recordSchema = new Schema({
 });
 
 const Record = mongoose.model("Record", recordSchema);
-model.exports = Record;
+module.exports = Record

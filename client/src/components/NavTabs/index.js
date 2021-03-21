@@ -1,9 +1,11 @@
 import { MDBNavbarNav } from "mdbreact";
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
+import { useIsAuthenticated } from "../../utils/auth";
 import mainlogo from "../../images/mainlogo.png"
 
 function NavTabs() {
+  const isAuth = useIsAuthenticated();
   return (
     <Navbar expand="lg">
       <Navbar.Brand className="p-0">
@@ -22,12 +24,13 @@ function NavTabs() {
             <Nav.Link href="/" style={{ fontSize: "20px", color: "black" }}>
               Home
             </Nav.Link>
-            <Nav.Link href="/signup" style={{ fontSize: "20px", color: "black" }}>
+            {!isAuth && <Nav.Link href="/signup" style={{ fontSize: "20px", color: "black" }}>
               Signup
-            </Nav.Link>
-            <Nav.Link href="/login" style={{ fontSize: "20px", color: "black" }}>
+            </Nav.Link>}
+            {!isAuth && <Nav.Link href="/login" style={{ fontSize: "20px", color: "black" }}>
               Login
-            </Nav.Link>
+            </Nav.Link>}
+
             <Nav.Link href="#" style={{ fontSize: "20px", color: "black" }}>
               Something
             </Nav.Link>
