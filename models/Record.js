@@ -44,7 +44,7 @@ const recordSchema = new Schema({
         maxlength: 50,
         required: true
     },
-    genre: {
+    recordGenre: {
         type: String,
         enum: [
             "Alternative",

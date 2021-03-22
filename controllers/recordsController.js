@@ -9,9 +9,14 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-  findById: function(req, res) {
+  findbyGenre: function(req, res) {
     db.Record
-      .findById(req.params.id)
+      .findAll({
+        where:
+        {
+          recordGenre: req.params.recordGenre
+        }
+      })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
