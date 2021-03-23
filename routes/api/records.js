@@ -5,7 +5,7 @@ const recordController = require("../../controllers/recordsController");
 
 router.route("/")
     .get(recordController.findAll)
-    .post(recordController.create)
+    .post(recordController.create);
 
 // router.post("/", authenticate, (req, res) => {
 //     recordController.create;
@@ -26,3 +26,5 @@ router.route("/:id")
 // router.delete("/:id", authenticate, (req, res) => {
 //     recordController.remove;
 // });
+
+module.exports = router;

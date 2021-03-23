@@ -96,9 +96,8 @@ const recordSchema = new Schema({
         required: true
     },
     recordComments: [{ 
-        body: String,
+        type: String,
         maxlength: 250,
-        date: Date 
     }],
     recordPosterContact: {
         type: String,

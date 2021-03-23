@@ -1,13 +1,15 @@
 const router = require("express").Router();
 
-const chartRoutes = require("./charts");
-const discRoutes = require("./discs");
+// const chartRoutes = require("./charts");
+// const discRoutes = require("./discs");
 const recordRoutes = require("./records");
-const tapeRoutes = require("./tapes");
+// const tapeRoutes = require("./tapes");
+const authRoutes = require("./authentication");
 
-router.use("/api/charts", chartRoutes);
-router.use("/api/discs", discRoutes);
-router.use("/api/records", recordRoutes);
-router.use("/api/tapes", tapeRoutes);
+// router.use("/charts", chartRoutes);
+// router.use("/discs", discRoutes);
+router.use("/records", recordRoutes);
+// router.use("/tapes", tapeRoutes);
+router.use("/auth", authRoutes)
 
 module.exports = router;

@@ -5,8 +5,8 @@
 
 // ObjectId
 
-// router.get("/api/posts", checkAuth (req, res) => {});
+// router.get("/all", checkAuth (req, res) => {});
 
-// router.get("/api/posts/all", checkAuth () => {});
+// router.get("/:id", checkAuth () => {});
 
 // router.post("/api/post/")

@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 const app = express();
 
 app.use(express.urlencoded({extended:true}))
@@ -20,7 +20,7 @@ if (process.env.NODE_ENV === "production") {
 
 // Send every request to the React app
 // Define any API routes before this runs
-app.use("/api", require("./routes/authentication"));
+app.use("/api", require("./routes/api"));
 app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
