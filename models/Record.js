@@ -2,9 +2,9 @@ const mongoose = require ('mongoose');
 const { Schema } = mongoose;
 
 const recordSchema = new Schema({
-    recordDatePosted: {
-        type: String,
-        maxlength: 50,
+    recordDatePosted: { 
+        type: Date, 
+        default: Date.now 
     },
     recordAlbumName:  {
         type: String,
@@ -35,10 +35,10 @@ const recordSchema = new Schema({
         type: String,
         maxlength: 50,
     },
-    recordComments: [{ 
+    recordComments: { 
         type: String,
         maxlength: 250,
-    }],
+    },
     recordPosterContact: {
         type: String,
         maxlength: 50,
