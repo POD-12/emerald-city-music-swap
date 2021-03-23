@@ -44,7 +44,7 @@ const recordSchema = new Schema({
         maxlength: 50,
         required: true
     },
-    genre: {
+    recordGenre: {
         type: String,
         enum: [
             "Alternative",
@@ -96,9 +96,8 @@ const recordSchema = new Schema({
         required: true
     },
     recordComments: [{ 
-        body: String,
+        type: String,
         maxlength: 250,
-        date: Date 
     }],
     recordPosterContact: {
         type: String,
