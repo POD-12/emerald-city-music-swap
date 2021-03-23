@@ -3,97 +3,37 @@ const { Schema } = mongoose;
 
 const recordSchema = new Schema({
     recordDatePosted: {
-        type: Date,
-        default: Date.now
+        type: String,
+        maxlength: 50,
     },
     recordAlbumName:  {
         type: String,
         maxlength: 50,
-        required: true
     },
     recordReleaseYear:  {
         type: Number,
         minlength: 4,
         maxlength: 4,
-        required: true
     },
     recordSize: {
         type: String,
-        enum: [
-            "12in",
-            "10in",
-            "7in",
-            "OTHER"
-        ],
-        required: true
+        maxlength: 50,
     },
     recordSpeed: {
         type: String,
-        enum: [
-            "78 RPM",
-            "45 RPM",
-            "33⅓ RPM",
-            "16⅔ RPM",
-            "8⅓ RPM",
-            "OTHER"
-        ],
-        required: true
+        maxlength: 50,
     },
     recordArtist: {
         type: String,
         maxlength: 50,
-        required: true
     },
     recordGenre: {
         type: String,
-        enum: [
-            "Alternative",
-            "Blues",
-            "Children's",
-            "Classical",
-            "Comedy",
-            "Country",
-            "Dance",
-            "Disco",
-            "Electronic",
-            "Folk",
-            "Gospel",
-            "Hip-Hop/Rap",
-            "Holiday",
-            "Indie",
-            "Industrial",
-            "Jazz",
-            "Karaoke",
-            "Latin",
-            "Metal",
-            "Motown",
-            "New Age",
-            "Oldies",
-            "Opera",
-            "Pop",
-            "R&B",
-            "Reggae",
-            "Religious",
-            "Rock",
-            "Soul",
-            "World",
-            "OTHER"
-        ],
-        required: true
+        maxlength: 50,
     },
     recordCondition: {
         type: String,
-        enum : [
-            "Mint", 
-            "Near Mint", 
-            "Excellent", 
-            "Very Good Plus",
-            "Very Good",
-            "Good",
-            "Fair",
-            "Poor"
-        ],
-        required: true
+        maxlength: 50,
     },
     recordComments: [{ 
         type: String,
@@ -102,7 +42,6 @@ const recordSchema = new Schema({
     recordPosterContact: {
         type: String,
         maxlength: 50,
-        required: true
     }
 });
 
