@@ -37,5 +37,10 @@ class API {
     authenticated() {
         return this.axios.post("/api/auth/authenticated");
     }
+
+    createRecord(recordData) {
+        return this.axios.post("/api/records", recordData);
+    }
+
 }
 export default new API();
