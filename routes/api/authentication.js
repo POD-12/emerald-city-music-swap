@@ -4,21 +4,21 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const util = require("util");
 
-const passwordHash = require("../config/passwordHash");
-
+const passwordHash = require("../../config/passwordHash")
 //get middleware
-const authenticateUser = require("./middleware/authenticateUser");
-const validateBodyWith = require("./middleware/validateUserWith");
+const authenticateUser = require("../middleware/authenticateUser");
+const validateBodyWith = require("../middleware/validateUserWith");
 
 //data validators
-const { loginValidator, registerValidator } = require("./validation");
+const { loginValidator, registerValidator } = require("../validation");
 //load User model
-const { User } = require("../models");
+const { User } = require("../../models");
 
 const jwtSign = util.promisify( jwt.sign );
 
 //get currently validated user
 router.post("/authenticated", authenticateUser, (req,res)=>{
+  console.log(req.user);
   res.json(req.user);
 });
 

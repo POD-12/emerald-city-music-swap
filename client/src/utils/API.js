@@ -22,7 +22,7 @@ class API {
      * @returns {Promise}
      */
     register( userData ) {
-        return this.axios.post("/api/register", userData);
+        return this.axios.post("/api/auth/register", userData);
     }
     /**
      * @param {object} userData 
@@ -32,10 +32,10 @@ class API {
      * @returns {Promise}
      */
     login( userData ) {
-        return this.axios.post("/api/login", userData);
+        return this.axios.post("/api/auth/login", userData);
     }
     authenticated() {
-        return this.axios.post("/api/authenticated");
+        return this.axios.post("/api/auth/authenticated");
     }
 }
 export default new API();
