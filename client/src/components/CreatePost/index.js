@@ -11,7 +11,8 @@ function CreatePost() {
     posterName:"",
     datePosted:"",
     recordComments:"",
-    genre:""
+    genre:"",
+    condition:""
 
   })
 
@@ -29,7 +30,7 @@ function CreatePost() {
     "recordSpeed" : "",
     "recordArtist" : records.artist,
     "recordGenre" : records.genre,
-    "recordCondition" : "",
+    "recordCondition" : records.condition,
     "recordComments" : records.recordComments,
     "recordPosterContact" :records.posterName,
     }
@@ -79,8 +80,8 @@ function CreatePost() {
                     <option>Genre</option>
                     {/* going to see if theres another way to do this */}
                     <option value="Rock">Rock</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
+                    <option value="Classic Rock">Classic Rock</option>
+                    <option value="Alternative">Alternative</option>
                   </select>
                 </div>
               </MDBCol>
