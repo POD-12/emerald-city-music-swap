@@ -1,17 +1,17 @@
 import React from "react";
-import {  MDBRow, MDBCol, MDBCardBody, MDBIcon, MDBBtn } from "mdbreact";
+import {  MDBRow, MDBCol, MDBIcon, MDBBtn } from "mdbreact";
+
 import "./scrollbar.css";
 
 
 // {/* we want to be able to have multiple posts two on a row? */}
 const FeaturedCards = (props) => {
+ 
+
   const scrollContainerStyle = { width: "220px", maxHeight: "200px" };
   return (
     
-      <MDBCardBody className="text-center pt-0">
-        <h2 className="font-weight-bold text-center my-5">
-          Recent posts
-        </h2>
+      
 
         <MDBRow className="text-md-left d-flex justify-content-center">
 
@@ -62,7 +62,7 @@ const FeaturedCards = (props) => {
 
         </MDBRow>
   
-      </MDBCardBody>
+      
    
   );
 }
