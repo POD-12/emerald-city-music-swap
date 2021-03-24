@@ -56,40 +56,50 @@ function CreatePost() {
               <input type="text" className="form-control" placeholder="Album Name" name="album" value={records.album} onChange={handleChange}/>
                 </div>
               </MDBCol>
-              <MDBCol md="6">
+              <MDBCol md="5">
               <div className="form-group">
-              <input type="text" className="form-control" placeholder="poster name" name="posterName" value={records.posterName} onChange={handleChange}/>
+              <input type="text" className="form-control" placeholder="Poster Username" name="posterName" value={records.posterName} onChange={handleChange}/>
                 </div>
               </MDBCol>
               
-              <MDBCol md="6">
+              {/* <MDBCol md="6">
               <div className="form-group">
               <input type="text" className="form-control" placeholder="record comments" name="recordComments" value={records.recordComments} onChange={handleChange}/>
                 </div>
-              </MDBCol>
+              </MDBCol> */}
               
-              <MDBCol md="6">
+              {/* <MDBCol md="6">
               <div className="form-group">
               <input type="text" className="form-control" placeholder="Genre" name="genre" value={records.genre} onChange={handleChange}/>
                 </div>
-              </MDBCol>
-            </MDBRow>
-            
-            <MDBRow>
+              </MDBCol> */}
               <MDBCol md="4">
                 <div>
-                  <select className="browser-default custom-select">
+                  <select className="browser-default custom-select" name="genre" value={records.genre} onChange={handleChange}>
                     <option>Genre</option>
-                    <option value="1">Option 1</option>
+                    {/* going to see if theres another way to do this */}
+                    <option value="Rock">Rock</option>
                     <option value="2">Option 2</option>
                     <option value="3">Option 3</option>
                   </select>
                 </div>
               </MDBCol>
-
-              
+              <MDBCol md="3">
+                <div>
+                  <select className="browser-default custom-select" name="genre" value={records.genre} onChange={handleChange}>
+                    <option>Condition</option>
+                    {/* going to see if theres another way to do this */}
+                    <option value="Excellent">Excellent</option>
+                    <option value="Good">Good</option>
+                    <option value="Fair">Fair</option>
+                    <option value="Poor">Poor</option>
+                  </select>
+                </div>
+              </MDBCol>
             </MDBRow>
-            <MDBInput type="textarea" label="Other record Details" className="rounded" outline />
+            
+         
+            <MDBInput type="textarea" label="Other record details" name="recordComments" className="rounded" outline value={records.recordComments} onChange={handleChange}/>
 
                 <div className="input-group">
                 <div className="input-group-prepend">
@@ -109,6 +119,7 @@ function CreatePost() {
                   </label>
                 </div>
               </div>
+            
           <div className="text-center text-md-center">
             <MDBBtn type="submit" style={{ borderRadius: "2rem" }} onClick={handleSubmit} >
               Create Post

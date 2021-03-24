@@ -11,7 +11,7 @@ const FeaturedCards = (props) => {
           Recent posts
         </h2>
 
-        <MDBRow className="text-center">
+        <MDBRow className="d-flex justify-content-center">
 
           {props.records.length > 0 ? props.records.map(record =>{
             return(
@@ -21,7 +21,7 @@ const FeaturedCards = (props) => {
             
               <img
                 className="img-fluid w-50 mx-auto d-block"
-                src="https://images.pexels.com/photos/167092/pexels-photo-167092.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                src="https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg"
                 alt=""
               />
               <MDBMask overlay="white-slight" />
@@ -31,13 +31,13 @@ const FeaturedCards = (props) => {
             <div>Artist Name: {record.recordArtist}</div>
             </div>
             <div>
-            by <h2 className="font-weight-bold">{record.recordPosterContact}</h2>,
+            by <a href="#!" className="font-weight-bold">{record.recordPosterContact}</a>,
               date posted:{Date.now}
             </div>
             <div className="dark-grey-text text-left p-2">
               {record.recordComments}
             </div>
-            <MDBBtn color="pink" rounded size="md">
+            <MDBBtn color="grey" style={{ borderRadius: "2rem" }} size="md">
               Take me Home
             </MDBBtn>
           </MDBCol>
