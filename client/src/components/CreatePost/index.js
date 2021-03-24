@@ -1,4 +1,4 @@
-import { MDBBtn, MDBCol, MDBContainer, MDBRow} from "mdbreact";
+import { MDBBtn, MDBCol, MDBContainer, MDBRow, MDBInput} from "mdbreact";
 import React, {useState} from "react";
 import API from "../../utils/API"
 
@@ -41,24 +41,48 @@ function CreatePost() {
                 </div>
               </MDBCol>
             </MDBRow>
-            {/* <MDBRow>
-              <MDBCol md="6">
-                <div className="form-group">
-                  <input type="text" className="form-control" placeholder="Price" />
+            
+            <MDBRow>
+              <MDBCol md="4">
+                <div>
+                  <select className="browser-default custom-select">
+                    <option>Genre</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                  </select>
                 </div>
               </MDBCol>
-              <MDBCol md="6">
-              <div className="form-group">
-                  <input type="text" className="form-control" placeholder="" />
+
+              
+            </MDBRow>
+            <MDBInput type="textarea" label="Other record Details" className="rounded" outline />
+
+                <div className="input-group">
+                <div className="input-group-prepend">
+                  <span className="input-group-text" id="inputGroupFileAddon01">
+                    Upload
+                  </span>
                 </div>
-              </MDBCol>
-            </MDBRow> */}
-          </form>
+                <div className="custom-file">
+                  <input
+                    type="file"
+                    className="custom-file-input"
+                    id="inputGroupFile01"
+                    aria-describedby="inputGroupFileAddon01"
+                  />
+                  <label className="custom-file-label" htmlFor="inputGroupFile01">
+                    Choose file
+                  </label>
+                </div>
+              </div>
           <div className="text-center text-md-center">
             <MDBBtn type="submit" style={{ borderRadius: "2rem" }} onClick={handleSubmit} >
               Create Post
             </MDBBtn>
           </div>
+          </form>
+          
         </MDBCol>
       </MDBRow>
 
