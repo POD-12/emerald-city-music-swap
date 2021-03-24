@@ -9,7 +9,7 @@ function Home() {
     <div>
       <Carousel />
 
-      <FeaturedCards />
+      {/* <FeaturedCards /> */}
     </div>
   );
 }
