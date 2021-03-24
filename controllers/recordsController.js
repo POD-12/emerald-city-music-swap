@@ -3,9 +3,10 @@ const db = require("../models");
 // Defining methods for the recordsController
 module.exports = {
   findAll: function(req, res) {
+    console.log()
     db.Record
-      .find(req.query)
-      .sort({ date: -1 })
+      .find({})
+      // .sort({ date: -1 })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
@@ -21,6 +22,8 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   create: function(req, res) {
+   // req.body.posterName = req.user.email
+    console.log("create:",req.body)
     db.Record
       .create(req.body)
       .then(dbModel => res.json(dbModel))
