@@ -36,7 +36,7 @@ const FeaturedCards = (props) => {
             <div className="grey-text mt-2">
               {record.recordComments}
             </div>
-            <h6 className="grey-text float-left">Condition: {record.condition}</h6>
+            <h6 className="grey-text float-left">Condition: {record.recordCondition}</h6>
             
             
             <MDBCol>

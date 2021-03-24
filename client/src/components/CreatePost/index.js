@@ -30,7 +30,7 @@ function CreatePost() {
     "recordSpeed" : "",
     "recordArtist" : records.artist,
     "recordGenre" : records.genre,
-    "recordCondition" : records.condition,
+    "recordCondition" : records.recordCondition,
     "recordComments" : records.recordComments,
     "recordPosterContact" :records.posterName,
     }
@@ -87,7 +87,7 @@ function CreatePost() {
               </MDBCol>
               <MDBCol md="3">
                 <div>
-                  <select className="browser-default custom-select" name="condition" value={records.condition} onChange={handleChange}>
+                  <select className="browser-default custom-select" name="recordCondition" value={records.recordCondition} onChange={handleChange}>
                     <option>Condition</option>
                     {/* going to see if theres another way to do this */}
                     <option value="Excellent">Excellent</option>
