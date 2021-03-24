@@ -7,7 +7,12 @@ function CreatePost() {
 
   const [records, setRecords] = useState({
     artist: "",
-    album: ""
+    album: "",
+    posterName:"",
+    datePosted:"",
+    recordComments:"",
+    genre:""
+
   })
 
   function handleChange(event) {
@@ -17,7 +22,18 @@ function CreatePost() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    API.createRecord(records).then(res => console.log(res))
+    const newRecord = {
+    "recordAlbumName" :  records.album,
+    "recordReleaseYear" : "",
+    "recordSize" : "",
+    "recordSpeed" : "",
+    "recordArtist" : records.artist,
+    "recordGenre" : records.genre,
+    "recordCondition" : "",
+    "recordComments" : records.recordComments,
+    "recordPosterContact" :records.posterName,
+    }
+    API.createRecord(newRecord).then(res => console.log(res))
       
   }
 
@@ -38,6 +54,23 @@ function CreatePost() {
               <MDBCol md="6">
               <div className="form-group">
               <input type="text" className="form-control" placeholder="Album Name" name="album" value={records.album} onChange={handleChange}/>
+                </div>
+              </MDBCol>
+              <MDBCol md="6">
+              <div className="form-group">
+              <input type="text" className="form-control" placeholder="poster name" name="posterName" value={records.posterName} onChange={handleChange}/>
+                </div>
+              </MDBCol>
+              
+              <MDBCol md="6">
+              <div className="form-group">
+              <input type="text" className="form-control" placeholder="record comments" name="recordComments" value={records.recordComments} onChange={handleChange}/>
+                </div>
+              </MDBCol>
+              
+              <MDBCol md="6">
+              <div className="form-group">
+              <input type="text" className="form-control" placeholder="Genre" name="genre" value={records.genre} onChange={handleChange}/>
                 </div>
               </MDBCol>
             </MDBRow>

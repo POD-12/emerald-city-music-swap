@@ -4,7 +4,7 @@ const db = require("../../models");
 const recordController = require("../../controllers/recordsController");
 
 router.route("/")
-    // .get(recordController.findAll)
+    .get(recordController.findAll)
     .post(recordController.create);
 
 // router.post("/", authenticate, (req, res) => {
