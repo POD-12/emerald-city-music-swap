@@ -41,6 +41,9 @@ class API {
     createRecord(recordData) {
         return this.axios.post("/api/records", recordData);
     }
+    findAllRecords(){
+        return this.axios.get("/api/records")
+    }
 
 }
 export default new API();
