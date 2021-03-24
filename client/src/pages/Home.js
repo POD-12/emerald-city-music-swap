@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "../components/Carousel";
-import FeaturedCards from "../components/FeaturedCards";
+// import FeaturedCards from "../components/FeaturedCards";
 
 function Home() {
 
@@ -9,7 +9,7 @@ function Home() {
     <div>
       <Carousel />
 
-      <FeaturedCards />
+      {/* <FeaturedCards /> */}
     </div>
   );
 }

@@ -7,9 +7,12 @@ import {
   MDBView,
   MDBMask,
 } from "mdbreact";
-import photo2 from "../../images/photo2.jpg";
-import photo3 from "../../images/photo3.jpg";
-import photo1 from "../../images/photo1.jpg";
+// import photo2 from "../../images/photo2.jpg";
+// import photo3 from "../../images/photo3.jpg";
+// import photo1 from "../../images/photo1.jpg";
+import test1 from "../../images/test1.png";
+import test4 from "../../images/test4.png";
+import test5 from "../../images/test5.png";
 import "./index.css";
 
 const Carousel = () => {
@@ -26,7 +29,7 @@ const Carousel = () => {
           <MDBView>
             <img
               className="img-fluid d-block w-100"
-              src={photo2}
+              src={test1}
               alt="First slide"
             />
             <MDBMask overlay="black-light" />
@@ -38,8 +41,11 @@ const Carousel = () => {
         </MDBCarouselItem>
         <MDBCarouselItem itemId="2">
           <MDBView>
-            <img className="d-block w-100" src={photo3} alt="Second slide" />
-            <MDBMask overlay="black-strong" />
+            <img 
+              className="d-block w-100" 
+              src={test4} alt="Second slide" 
+              />
+            <MDBMask overlay="black-slight" />
           </MDBView>
           <MDBCarouselCaption>
             <h3 className="h3-responsive">POST</h3>
@@ -48,7 +54,10 @@ const Carousel = () => {
         </MDBCarouselItem>
         <MDBCarouselItem itemId="3">
           <MDBView>
-            <img className="d-block w-100" src={photo1} alt="Third slide" />
+            <img 
+              className="d-block w-100" 
+              src={test5} alt="Third slide" 
+              />
             <MDBMask overlay="black-slight" />
           </MDBView>
           <MDBCarouselCaption>
