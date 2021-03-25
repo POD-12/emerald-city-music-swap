@@ -59,7 +59,7 @@ function CreatePost() {
               </MDBCol>
               <MDBCol md="5">
               <div className="form-group">
-              <input type="text" className="form-control" placeholder="Poster Username" name="posterName" value={records.posterName} onChange={handleChange}/>
+              <input type="text" className="form-control" placeholder="Poster Email" name="posterName" value={records.posterName} onChange={handleChange}/>
                 </div>
               </MDBCol>
               
@@ -88,12 +88,14 @@ function CreatePost() {
               <MDBCol md="3">
                 <div>
                   <select className="browser-default custom-select" name="recordCondition" value={records.recordCondition} onChange={handleChange}>
-                    <option>Condition</option>
+                    <option value="Mint">Mint</option>
                     {/* going to see if theres another way to do this */}
+                    <option value="Near Mint">Near Mint</option>
                     <option value="Excellent">Excellent</option>
+                    <option value="Very Good (Plus)">Very Good (Plus)</option>
+                    <option value="Very Good">Very Good</option>
                     <option value="Good">Good</option>
-                    <option value="Fair">Fair</option>
-                    <option value="Poor">Poor</option>
+                    <option value="Poor/Fair">Poor/Fair</option>
                   </select>
                 </div>
               </MDBCol>

@@ -23,8 +23,9 @@ router.route("/:id")
 //     recordController.update;
 // });
 
-// router.delete("/:id", authenticate, (req, res) => {
-//     recordController.remove;
+// router.delete("/:id/delete")
+//     .delete(recordController.remove);
+//     if (err) throw (err);
 // });
 
 module.exports = router;
