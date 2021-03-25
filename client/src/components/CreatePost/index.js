@@ -1,6 +1,6 @@
 import { MDBBtn, MDBCol, MDBContainer, MDBRow, MDBInput} from "mdbreact";
-import React, {useState} from "react";
-import API from "../../utils/API"
+// import React, {useState} from "react";
+// import API from "../../utils/API"
 
 
 function CreatePost() {
@@ -58,18 +58,6 @@ function CreatePost() {
                 </div>
               </MDBCol>
                
-              
-              {/* <MDBCol md="6">
-              <div className="form-group">
-              <input type="text" className="form-control" placeholder="record comments" name="recordComments" value={records.recordComments} onChange={handleChange}/>
-                </div>
-              </MDBCol> */}
-              
-              {/* <MDBCol md="6">
-              <div className="form-group">
-              <input type="text" className="form-control" placeholder="Genre" name="genre" value={records.genre} onChange={handleChange}/>
-                </div>
-              </MDBCol> */}
               <MDBCol md="4">
                 <div>
                   <select className="browser-default custom-select" name="recordGenre" >
@@ -77,7 +65,20 @@ function CreatePost() {
                     {/* going to see if theres another way to do this */}
                     <option value="Rock">Rock</option>
                     <option value="Classic Rock">Classic Rock</option>
+                    <option value="Classical">Classical</option>
+                    <option value="Country">Country</option>
+                    <option value="Dance">Dance</option>
+                    <option value="Disco">Disco</option>
+                    <option value="Hip-Hop/Rap">Hip-Hop/Rap</option>
+                    <option value="Indie">Indie</option>
                     <option value="Alternative">Alternative</option>
+                    <option value="Jazz">Jazz</option>
+                    <option value="Latin">Latin</option>
+                    <option value="Metal">Metal</option>
+                    <option value="Opera">Opera</option>
+                    <option value="Reggae">Reggae</option>
+                    <option value="Soul">Soul</option>
+                    <option value="Motown">Motown</option>
                   </select>
                 </div>
               </MDBCol>
@@ -86,9 +87,10 @@ function CreatePost() {
                   <select className="browser-default custom-select" name="recordCondition" >
                     <option>Condition</option>
                     {/* going to see if theres another way to do this */}
+                    <option value="Mint">Mint</option>
                     <option value="Near Mint">Near Mint</option>
                     <option value="Excellent">Excellent</option>
-                    <option value="Very Good (Plus)">Very Good (Plus)</option>
+                    <option value="Very Good Plus">Very Good Plus</option>
                     <option value="Very Good">Very Good</option>
                     <option value="Good">Good</option>
                     <option value="Poor/Fair">Poor/Fair</option>
@@ -102,17 +104,18 @@ function CreatePost() {
 
                 <div className="input-group">
                 <div className="input-group-prepend">
-                  <span className="input-group-text" id="inputGroupFileAddon01">
+                  {/* <span className="input-group-text" id="inputGroupFileAddon01">
                     Upload
-                  </span>
+                  </span> */}
                 </div>
              
-                  <input
+                  <MDBInput
                     type="file"
                     name="avatar"
                     className="custom-file-input"
                     id="inputGroupFile01"
                     aria-describedby="inputGroupFileAddon01"
+                    label="Click to Upload Image"
                   />
                  {/* <input type="submit"/> */}
 
@@ -125,7 +128,7 @@ function CreatePost() {
           </div>
           
           </form>
-          
+          <div className="mb-5"></div>
         </MDBCol>
       </MDBRow>
 
@@ -134,4 +137,3 @@ function CreatePost() {
   );
 };
 export default CreatePost;
-
