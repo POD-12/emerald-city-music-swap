@@ -42,7 +42,8 @@ const recordSchema = new Schema({
     recordPosterContact: {
         type: String,
         maxlength: 50,
-    }
+    },
+    image:{type: String}
 });
 
 const Record = mongoose.model("Record", recordSchema);
