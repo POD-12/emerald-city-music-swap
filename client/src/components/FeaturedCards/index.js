@@ -48,7 +48,7 @@ const FeaturedCards = (props) => {
               </div>
               
               
-              <MDBBtn color="black" className="d-inline" style={{ borderRadius: "2rem" }} size="sm">
+              <MDBBtn color="elegant" className="d-inline" style={{ borderRadius: "2rem" }} size="sm">
                   Get
                 </MDBBtn>
               
