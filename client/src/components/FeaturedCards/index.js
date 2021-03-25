@@ -5,10 +5,11 @@ import "./scrollbar.css";
 
 // {/* we want to be able to have multiple posts two on a row? */}
 const FeaturedCards = (props) => {
-  const scrollContainerStyle = { width: "220px", maxHeight: "200px" };
+  const scrollContainerStyle = { width: "200px", maxHeight: "82px" };
+  const imagestyle = {maxWidth: "250px", maxHeight: "250px"};
   return (
     
-      <MDBCardBody className="text-center pt-0">
+      <MDBCardBody className="carbody text-center pt-0">
         <h2 className="font-weight-bold text-center my-5">
           Recent posts
         </h2>
@@ -25,6 +26,7 @@ const FeaturedCards = (props) => {
                 className="mx-auto mb-md-0 mb-4 rounded z-depth-1 img-fluid"
                 tag="img"
                 alt="Sample avatar"
+                style={imagestyle}
               />
             </MDBCol>
             <MDBCol md="6" lg="5" className="float-left p-1">
@@ -45,13 +47,13 @@ const FeaturedCards = (props) => {
                 </div>
             </div>
             
-            
-            <MDBBtn color="grey" className="d-flex justify-content-end " style={{ borderRadius: "2rem" }} size="sm">
+         
+            <MDBBtn color="grey" className="d-inline" style={{ borderRadius: "2rem" }} size="sm">
                 Get
               </MDBBtn>
             
-              <MDBIcon icon="trash-alt" className="float-right" />
-
+              <MDBIcon icon="trash-alt" className="d-inline" />
+             
             
             </MDBCol>
 
