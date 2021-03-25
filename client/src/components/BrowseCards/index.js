@@ -21,7 +21,7 @@ const FeaturedCards = (props) => {
             <div><MDBIcon pull="right" far icon="bookmark" size="2x"/></div>
             <MDBCol md="4" lg="6" className="pl-0 p-1 float-left">
               <img
-                src="https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg"
+                src={"/images/" + record.image}
                 className="mx-auto mb-md-0 mb-4 rounded z-depth-1 img-fluid"
                 tag="img"
                 alt="Sample avatar"
