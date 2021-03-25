@@ -1,4 +1,4 @@
-import { MDBBtn, MDBCol, MDBContainer, MDBRow} from "mdbreact";
+import { MDBBtn, MDBCol, MDBRow} from "mdbreact";
 import React,{useState,useEffect} from 'react';
 import BrowseCards from '../../components/BrowseCards';
 import API from "../../utils/API";
@@ -42,10 +42,9 @@ function BrowseForm() {
   }
 
   return (
-    <MDBContainer className="mt-4 mb-5">
-      <MDBRow className="d-flex justify-content-center">
-
-      <MDBCol md="9" className=" shadow-box-example rounded z-depth-1-half md-0 mb-3 ">
+    <div >
+      <MDBRow className="d-flex justify-content-center pt-4">
+      <MDBCol md="9" className="shadow-box-example rounded z-depth-1-half md-0 mb-3 ">
           <form>
           <p className="h3 text-center mb-3 teal-text">Browse</p>
             <MDBRow>
@@ -78,15 +77,14 @@ function BrowseForm() {
               Search
             </MDBBtn>
           </div>
+          
         </MDBCol>
+        </MDBRow>
+      <MDBRow>
+        <BrowseCards records = {filterRecords} />
       </MDBRow>
-
-      <MDBRow className="justify-content-center">
+      </div>
       
-      <BrowseCards records = {filterRecords} />
-      
-      </MDBRow>
-    </MDBContainer>
     
   );
 };

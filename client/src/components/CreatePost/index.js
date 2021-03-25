@@ -1,6 +1,6 @@
 import { MDBBtn, MDBCol, MDBContainer, MDBRow, MDBInput} from "mdbreact";
-import React, {useState} from "react";
-import API from "../../utils/API"
+// import React, {useState} from "react";
+// import API from "../../utils/API"
 
 
 function CreatePost() {
@@ -123,7 +123,7 @@ function CreatePost() {
           </div>
           
           </form>
-          
+          <div className="mb-5"></div>
         </MDBCol>
       </MDBRow>
 
