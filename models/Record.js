@@ -1,16 +1,21 @@
-const mongoose = require ('mongoose');
+const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const recordSchema = new Schema({
-    recordDatePosted: { 
-        type: Date, 
-        default: Date.now 
+    recordDatePosted: {
+        type: Date,
+        default: Date.now
     },
-    recordAlbumName:  {
+    recordPosterId:
+    {
+        type: Schema.Types.ObjectId,
+        ref: 'users',
+    },
+    recordAlbumName: {
         type: String,
         maxlength: 50,
     },
-    recordReleaseYear:  {
+    recordReleaseYear: {
         type: Number,
         minlength: 4,
         maxlength: 4,
@@ -35,7 +40,7 @@ const recordSchema = new Schema({
         type: String,
         maxlength: 50,
     },
-    recordComments: { 
+    recordComments: {
         type: String,
         maxlength: 250,
     },

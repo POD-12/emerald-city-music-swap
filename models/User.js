@@ -1,11 +1,12 @@
 const mongoose = require("mongoose");
+const { use } = require("passport");
 const Schema = mongoose.Schema;
 
 // Create Schema
 const UserSchema = new Schema({
-  name:{
-    type:String,
-    required:true
+  name: {
+    type: String,
+    required: true
   },
   email: {
     type: String,
@@ -18,7 +19,17 @@ const UserSchema = new Schema({
   date: {
     type: Date,
     default: Date.now
-  }
-});
+  },
+  albumsPosted: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Record"
+    },
+  ],
+},
+  {
+    pushItems: true,
+  },
+);
 
 module.exports = User = mongoose.model("users", UserSchema);
