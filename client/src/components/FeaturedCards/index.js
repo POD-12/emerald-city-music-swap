@@ -36,7 +36,7 @@ const FeaturedCards = (props) => {
   
               <div className="dark-grey-text">
               <MDBIcon icon="user-circle" className="font-weight-bold mr-1"/>
-              <a href="#!" className=" font-weight-bolder">{record.recordPosterContact}</a>,
+              <a href="#!" className=" font-weight-bolder">{record.recordPosterContact}</a>
               {new Date().toLocaleDateString()}
               </div>
               <h6 className="float-left">Condition: {record.recordCondition}</h6>
