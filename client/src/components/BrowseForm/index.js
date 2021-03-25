@@ -23,23 +23,32 @@ function BrowseForm() {
   }
 
   function handleSubmit(event) {
-    console.log(inputsObj.album)
+    // console.log(inputsObj.album)
     
-    console.log(records)
+    // console.log(records)
     var result = records
     if (inputsObj.album) {
-     result = result.filter(each => each.recordAlbumName === inputsObj.album)
+      result = result.filter(each => each.recordAlbumName.includes(capitalizeFirstletter(inputsObj.album)))
     }
     if (inputsObj.artist) {
-      result = result.filter(each => each.recordArtist === inputsObj.artist)
+      result = result.filter(each => each.recordArtist.includes(capitalizeFirstletter(inputsObj.artist)))
      }
     if (inputsObj.genre) {
-      result = result.filter(each => each.recordGenre === inputsObj.genre)
+      result = result.filter(each => each.recordGenre === capitalizeFirstletter(inputsObj.genre))
      }
     
     setfilterRecords(result)
-    console.log(result)
+    // console.log(result)
   }
+
+  const capitalizeFirstletter = (word) => {
+   
+    var wordArray = word.split('')
+    var upperCaseFirst = wordArray[0].toLocaleUpperCase()
+    wordArray.splice(0, 1, upperCaseFirst)
+    word = wordArray.join('')
+    return word
+  } 
 
   return (
     <div >
@@ -61,8 +70,28 @@ function BrowseForm() {
             </MDBRow>
             <MDBRow>
               <MDBCol md="6">
-                <div className="form-group">
-                  <input type="text" className="form-control" placeholder="Genre" name= "genre" onChange={handleChange} />
+              <div className="form-group">
+                  
+                  <select className="browser-default custom-select" name= "genre" onChange={handleChange} >
+                    <option>Genre</option>
+                    {/* going to see if theres another way to do this */}
+                    <option value="Rock">Rock</option>
+                    <option value="Classic Rock">Classic Rock</option>
+                    <option value="Classical">Classical</option>
+                    <option value="Country">Country</option>
+                    <option value="Dance">Dance</option>
+                    <option value="Disco">Disco</option>
+                    <option value="Hip-Hop/Rap">Hip-Hop/Rap</option>
+                    <option value="Indie">Indie</option>
+                    <option value="Alternative">Alternative</option>
+                    <option value="Jazz">Jazz</option>
+                    <option value="Latin">Latin</option>
+                    <option value="Metal">Metal</option>
+                    <option value="Opera">Opera</option>
+                    <option value="Reggae">Reggae</option>
+                    <option value="Soul">Soul</option>
+                    <option value="Motown">Motown</option>
+                  </select>
                 </div>
               </MDBCol>
               <MDBCol md="6">

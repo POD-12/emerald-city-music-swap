@@ -58,18 +58,6 @@ function CreatePost() {
                 </div>
               </MDBCol>
                
-              
-              {/* <MDBCol md="6">
-              <div className="form-group">
-              <input type="text" className="form-control" placeholder="record comments" name="recordComments" value={records.recordComments} onChange={handleChange}/>
-                </div>
-              </MDBCol> */}
-              
-              {/* <MDBCol md="6">
-              <div className="form-group">
-              <input type="text" className="form-control" placeholder="Genre" name="genre" value={records.genre} onChange={handleChange}/>
-                </div>
-              </MDBCol> */}
               <MDBCol md="4">
                 <div>
                   <select className="browser-default custom-select" name="recordGenre" >
@@ -150,4 +138,3 @@ function CreatePost() {
   );
 };
 export default CreatePost;
-
