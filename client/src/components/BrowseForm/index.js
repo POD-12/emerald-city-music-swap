@@ -46,7 +46,7 @@ function BrowseForm() {
       <MDBRow className="d-flex justify-content-center pt-4">
       <MDBCol md="9" className="shadow-box-example rounded z-depth-1-half md-0 mb-3 ">
           <form>
-          <p className="h3 text-center mb-3 teal-text">Browse</p>
+          <p className="h3 text-center mb-3 black-text">Browse</p>
             <MDBRow>
               <MDBCol md="6">
                 <div className="form-group">
@@ -73,7 +73,7 @@ function BrowseForm() {
             </MDBRow>
           </form>
           <div className="text-center text-md-center">
-            <MDBBtn type="submit" style={{ borderRadius: "2rem" }} onClick={handleSubmit}>
+            <MDBBtn type="submit" color="elegant"  style={{ borderRadius: "2rem" }} onClick={handleSubmit}>
               Search
             </MDBBtn>
           </div>
