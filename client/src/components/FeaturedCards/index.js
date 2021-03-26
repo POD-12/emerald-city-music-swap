@@ -19,7 +19,7 @@ const FeaturedCards = (props) => {
           {props.records.length > 0 ? props.records.map(record =>{
             return(
               <MDBCol lg="5" md="12" className="pr-0 pl-0 m-1 mb-2 shadow-box-example rounded z-depth-1-half">
-              <div><MDBIcon pull="right" far icon="bookmark" size="2x"/></div>
+              {/* <div><MDBIcon pull="right" far icon="bookmark" size="2x"/></div> */}
               <MDBCol md="4" lg="6" className="pl-0 p-1 float-left">
                 <MDBCardImage
                   src={"/images/" + record.image}
@@ -30,8 +30,8 @@ const FeaturedCards = (props) => {
                waves />
               </MDBCol>
               <MDBCol md="6" lg="5" className="float-left p-1">
-              <h4 className="font-weight-bold mb-0">{record.recordArtist}</h4>
-              <h5 className="font-weight-bold  mb-1">{record.recordAlbumName}</h5>
+              <h4 className="font-weight-bold mb-0">{record.recordAlbumName}</h4>
+              <h5 className="font-weight-bold  mb-1">{record.recordArtist}</h5>
               <h6 className="">Genre: {record.recordGenre} </h6>
   
               <div className="dark-grey-text">
@@ -48,11 +48,11 @@ const FeaturedCards = (props) => {
               </div>
               
               
-              <MDBBtn color="elegant" className="d-inline" style={{ borderRadius: "2rem" }} size="sm">
+              {/* <MDBBtn color="elegant" className="d-inline" style={{ borderRadius: "2rem" }} size="sm">
                   Get
                 </MDBBtn>
               
-                <MDBIcon icon="trash-alt" className=" ml-5 d-inline" />
+                <MDBIcon icon="trash-alt" className=" ml-5 d-inline" /> */}
   
               
               </MDBCol>

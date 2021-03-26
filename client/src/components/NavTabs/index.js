@@ -44,9 +44,9 @@ function NavTabs() {
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
                   <MDBDropdownItem href="/createpost">Record</MDBDropdownItem>
-                  <MDBDropdownItem href="/cassette">Cassette</MDBDropdownItem>
+                  {/* <MDBDropdownItem href="/cassette">Cassette</MDBDropdownItem>
                   <MDBDropdownItem href="/disc">Disc</MDBDropdownItem>
-                  <MDBDropdownItem href="chart">Chart</MDBDropdownItem>
+                  <MDBDropdownItem href="chart">Chart</MDBDropdownItem> */}
                 </MDBDropdownMenu>
               </MDBDropdown>
         </Navbar.Collapse>

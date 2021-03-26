@@ -41,7 +41,8 @@ const recordSeed = [
     recordGenre: "Jazz",
     recordCondition: "Mint",
     recordComments: "A great jazz classic and the birth of cool.",
-    recordPosterContact: "gilevans@hotmail.com"
+    recordPosterContact: "gilevans@hotmail.com",
+    // image:"" 
   },
   {
     recordDatePosted: new Date(Date.now()),
@@ -53,7 +54,8 @@ const recordSeed = [
     recordGenre: "Jazz",
     recordCondition: "Very Good",
     recordComments: "An exemplary Third Stream jazz interpreation of Concierto e Aranjuez.",
-    recordPosterContact: "gilevans@hotmail.com"
+    recordPosterContact: "gilevans@hotmail.com",
+    // image:""
   },
   {
     recordDatePosted: new Date(Date.now()),
@@ -65,7 +67,8 @@ const recordSeed = [
     recordGenre: "Blues",
     recordCondition: "Good",
     recordComments: "This is the one-song/single release. The condition isn't great, but it plays ith minimal issues.",
-    recordPosterContact: "elwood.blues@gmail.com"
+    recordPosterContact: "elwood.blues@gmail.com",
+    // image:""
   },
   {
     recordDatePosted: new Date(Date.now()),
@@ -77,7 +80,8 @@ const recordSeed = [
     recordGenre: "Soul",
     recordCondition: "Very Good - Plus",
     recordComments: "Ray's debut album. Two sides of great music.",
-    recordPosterContact: "elwood.blues@gmail.com"
+    recordPosterContact: "elwood.blues@gmail.com",
+    // image:""
   },
   {
     recordDatePosted: new Date(Date.now()),
@@ -89,7 +93,8 @@ const recordSeed = [
     recordGenre: "Rythm & Blues",
     recordCondition: "Mint",
     recordComments: "Single release. Still in the plastic.",
-    recordPosterContact: "elwood.blues@gmail.com"
+    recordPosterContact: "elwood.blues@gmail.com",
+    // image:""
   },
   {
     recordDatePosted: new Date(Date.now()),
@@ -101,7 +106,8 @@ const recordSeed = [
     recordGenre: "Blues",
     recordCondition: "Very Good",
     recordComments: "Great album if your a fan of Freddie King.",
-    recordPosterContact: "elwood.blues@gmail.com"
+    recordPosterContact: "elwood.blues@gmail.com",
+    // image:""
   },
   {
     recordDatePosted: new Date(Date.now()),
@@ -113,7 +119,8 @@ const recordSeed = [
     recordGenre: "Funk",
     recordCondition: "Fair",
     recordComments: "Record skips at the bridge on the first verse, other than that it plays fine.",
-    recordPosterContact: "george.clinton@yahoo.com"
+    recordPosterContact: "george.clinton@yahoo.com",
+    // image:""
   },
   {
     recordDatePosted: new Date(Date.now()),
@@ -125,7 +132,8 @@ const recordSeed = [
     recordGenre: "Salsa",
     recordCondition: "Mint",
     recordComments: "Perfect condition, still in the plastic.",
-    recordPosterContact: "george.clinton@yahoo.com"
+    recordPosterContact: "george.clinton@yahoo.com",
+    // image:""
   },
   {
     recordDatePosted: new Date(Date.now()),
@@ -137,7 +145,8 @@ const recordSeed = [
     recordGenre: "Funk",
     recordCondition: "Near Mint",
     recordComments: "Its been played a few times, but still basically new.",
-    recordPosterContact: "george.clinton@yahoo.com"
+    recordPosterContact: "george.clinton@yahoo.com",
+    // image:""
   }
 ];
 
@@ -145,7 +154,7 @@ db.User
   .remove({})
   .then(() => db.User.collection.insertMany(userSeed))
   .then(data => {
-    console.log(data.result.n + "users inserted!");
+    console.log(data.result.n + " users inserted!");
     process.exit(0);
   })
   .catch(err => {
@@ -157,7 +166,7 @@ db.User
   .remove({})
   .then(() => db.Record.collection.insertMany(recordSeed))
   .then(data => {
-    console.log(data.result.n + "records inserted!");
+    console.log(data.result.n + " records inserted!");
     process.exit(0);
   })
   .catch(err => {

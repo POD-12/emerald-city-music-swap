@@ -6,11 +6,6 @@ const recordSchema = new Schema({
         type: Date,
         default: Date.now
     },
-    recordPosterId:
-    {
-        type: Schema.Types.ObjectId,
-        ref: 'users',
-    },
     recordAlbumName: {
         type: String,
         maxlength: 50,
@@ -48,7 +43,11 @@ const recordSchema = new Schema({
         type: String,
         maxlength: 50,
     },
-    image:{type: String}
+    recordOwner: {
+        type: Schema.Types.ObjectId,
+        ref: 'users',
+    },
+    image: { type: String }
 });
 
 const Record = mongoose.model("Record", recordSchema);
