@@ -29,8 +29,8 @@ const FeaturedCards = (props) => {
              waves />
             </MDBCol>
             <MDBCol md="6" lg="5" className="float-left p-1">
-            <h4 className="font-weight-bold mb-0">{record.recordArtist}</h4>
-            <h5 className="font-weight-bold  mb-1">{record.recordAlbumName}</h5>
+            <h4 className="font-weight-bold mb-0">{record.recordAlbumName}</h4>
+            <h5 className="font-weight-bold  mb-1">{record.recordArtist}</h5>
             <h6 className="">Genre: {record.recordGenre} </h6>
 
             <div className="dark-grey-text">
