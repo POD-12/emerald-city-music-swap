@@ -57,19 +57,19 @@ function BrowseForm() {
           <form>
             <p className="h3 text-center mb-3 black-text">Browse</p>
             <MDBRow>
-              <MDBCol md="12">
+              <MDBCol md="6">
                 <div className="form-group">
                   <input type="text" className="form-control" placeholder="Artist name" name="artist" onChange={handleChange} />
                 </div>
               </MDBCol>
-              {/* <MDBCol md="6">
+              <MDBCol md="6">
                 <div className="form-group">
                   <input type="text" className="form-control" placeholder="Album" name="album" onChange={handleChange} />
                 </div>
-              </MDBCol> */}
+              </MDBCol>
             </MDBRow>
             <MDBRow>
-              {/* <MDBCol md="6">
+              <MDBCol md="6">
                 <div className="form-group">
 
                   <select className="browser-default custom-select" name="genre" onChange={handleChange} >
@@ -98,7 +98,7 @@ function BrowseForm() {
                 <div className="form-group">
                   <input type="text" className="form-control" placeholder="" />
                 </div>
-              </MDBCol> */}
+              </MDBCol>
             </MDBRow>
           </form>
           <div className="text-center text-md-center">
