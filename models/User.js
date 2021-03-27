@@ -3,9 +3,9 @@ const Schema = mongoose.Schema;
 
 // Create Schema
 const UserSchema = new Schema({
-  name:{
-    type:String,
-    required:true
+  name: {
+    type: String,
+    required: true
   },
   email: {
     type: String,
@@ -19,7 +19,12 @@ const UserSchema = new Schema({
     type: Date,
     default: Date.now
   },
-  record:[{type:Schema.Types.ObjectId, ref: "Record"}]
+
+  userRecords: [{
+    type: Schema.Types.ObjectId,
+    ref: "Record"
+  }],
+
 });
 
 module.exports = User = mongoose.model("users", UserSchema);
