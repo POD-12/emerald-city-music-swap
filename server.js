@@ -27,7 +27,7 @@ app.get("*", function (req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/hipsterapp",
+  process.env.MONGODB_URI || "mongodb://localhost/emerald-city-music-swap",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
