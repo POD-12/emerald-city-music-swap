@@ -1,11 +1,12 @@
 import { MDBDropdown, MDBDropdownItem, MDBDropdownMenu, MDBDropdownToggle, MDBNavbarNav } from "mdbreact";
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
-import { useIsAuthenticated } from "../../utils/auth";
+import { useIsAuthenticated, useLogout } from "../../utils/auth";
 import mainlogo from "../../images/mainlogo.png"
 
 function NavTabs() {
   const isAuth = useIsAuthenticated();
+  const logout = useLogout();
   return (
     <Navbar expand="lg">
       <Navbar.Brand className="p-0">
@@ -34,7 +35,7 @@ function NavTabs() {
                 <MDBDropdownMenu>
                 {!isAuth && <MDBDropdownItem href="/login">Login</MDBDropdownItem>}
                 {!isAuth && <MDBDropdownItem href="/signup">Signup</MDBDropdownItem>}
-                  <MDBDropdownItem href="/disc">Logout</MDBDropdownItem>
+                  <MDBDropdownItem href="/" onClick={logout}>Logout</MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
           
