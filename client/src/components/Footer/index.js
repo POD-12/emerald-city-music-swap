@@ -8,8 +8,9 @@ function Footer() {
       
     </MDBContainer>
       <div className="footer-copyright text-center py-3">
-        <MDBContainer fluid>
+        
           <div>&copy; 2021 Copyright: POD 12</div>
+          <MDBContainer fluid>
           <a
           style={{ color: "black" }}
           className="ml-5"

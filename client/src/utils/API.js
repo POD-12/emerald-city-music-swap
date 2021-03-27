@@ -44,6 +44,9 @@ class API {
     findAllRecords(){
         return this.axios.get("/api/records")
     }
+    deleteOneRecord(id) {
+        return this.axios.delete("/api/records/" + id);
+    }
 
 }
 export default new API();
