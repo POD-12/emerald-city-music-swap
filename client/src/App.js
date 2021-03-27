@@ -10,7 +10,7 @@ import PrivateRoute from "./components/PrivateRoute";
 import LandingPage from "./pages/LandingPage";
 import BrowseForm from "./components/BrowseForm";
 import CreatePost from "./components/CreatePost";
-
+import {Route } from "react-router-dom";
 
 
 
@@ -22,7 +22,7 @@ function App() {
     {isAuthDone && 
     <div>
       <NavTabs/>
-      <GuestRoute exact path="/" component={Home} redirectTo = "/userPage"/>
+      <Route exact path="/" component={Home}/>
       <PrivateRoute exact path="/browse" component={BrowseForm} redirectTo = "/login"/>
       <PrivateRoute exact path="/createpost" component={CreatePost} redirectTo = "/login"/>
       <GuestRoute exact path ="/signup" component={Signup} redirectTo = "/userPage"/>

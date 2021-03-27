@@ -36,7 +36,7 @@ function NavTabs() {
               </MDBDropdown>
 
               <Nav className="mr-auto animated fadeInLeft" id="name">
-          <Nav.Link href="/browse" style={{ fontSize: "20px", color: "black"}}>
+          <Nav.Link href="/userPage" style={{ fontSize: "20px", color: "black"}}>
               Recent
             </Nav.Link>
             </Nav>

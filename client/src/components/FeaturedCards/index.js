@@ -19,7 +19,7 @@ const FeaturedCards = (props) => {
   return (
 
     <MDBCardBody className="carbody text-center pt-0">
-      <h2 className="font-weight-bold text-center my-5">Recent posts</h2>
+      <h2 className="font-weight-bolder text-center">Recent posts</h2>
       <MDBContainer>
 
         <MDBRow className="text-md-left d-flex justify-content-center">
