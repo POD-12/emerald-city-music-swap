@@ -7,7 +7,7 @@ import mainlogo from "../../images/mainlogo.png"
 function NavTabs() {
   const isAuth = useIsAuthenticated();
   return (
-    <Navbar expand="lg">
+    <Navbar expand="lg" style={{maxWidth:"100vw"}}>
       <Navbar.Brand className="p-0">
       <Nav.Link href="/">
         <img
@@ -22,15 +22,10 @@ function NavTabs() {
       <MDBNavbarNav right>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto animated fadeInLeft" id="name">
-          <Nav.Link href="/browse" style={{ fontSize: "20px", color: "black" }}>
-              Browse
-            </Nav.Link>
-            </Nav>
-          
-         <MDBDropdown>
+
+        <MDBDropdown className="animated fadeInLeft">
                 <MDBDropdownToggle nav caret>
-                  <span className="mr-2" style={{ fontSize: "20px", color: "black" }}>Add Item</span>
+                  <span className="mr-2" style={{ fontSize: "20px", color: "black" }}>Add</span>
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
                   <MDBDropdownItem href="/createpost">Record</MDBDropdownItem>
@@ -40,9 +35,21 @@ function NavTabs() {
                 </MDBDropdownMenu>
               </MDBDropdown>
 
-              <MDBDropdown>
+              <Nav className="mr-auto animated fadeInLeft" id="name">
+          <Nav.Link href="/browse" style={{ fontSize: "20px", color: "black"}}>
+              Recent
+            </Nav.Link>
+            </Nav>
+
+          <Nav className="mr-auto animated fadeInLeft" id="name">
+          <Nav.Link href="/browse" style={{ fontSize: "20px", color: "black"}}>
+              Browse
+            </Nav.Link>
+            </Nav>
+          
+           <MDBDropdown className="mr-2 animated fadeInLeft">
                 <MDBDropdownToggle nav caret>
-                  <span className="mr-2" style={{ fontSize: "20px", color: "black" }}><MDBIcon icon="user-circle" /></span>
+                  <span className="mr-2" style={{ fontSize: "20px", color: "black"}}><MDBIcon icon="user-circle" className="mr-1"/>Account</span>
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
                 {!isAuth && <MDBDropdownItem href="/login">Login</MDBDropdownItem>}
@@ -50,7 +57,8 @@ function NavTabs() {
                   <MDBDropdownItem href="/disc">Logout</MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
-
+          
+         
         </Navbar.Collapse>
        
       </MDBNavbarNav>

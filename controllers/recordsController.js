@@ -6,7 +6,7 @@ module.exports = {
     console.log()
     db.Record
       .find({})
-      // .sort({ date: -1 })
+      .sort({ recordDatePosted: -1 })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
