@@ -8,7 +8,7 @@ function NavTabs() {
   const isAuth = useIsAuthenticated();
   const logout = useLogout();
   return (
-    <Navbar expand="lg" style={{maxWidth:"100vw"}}>
+    <Navbar expand="lg" style={{maxWidth:"100vw", zIndex: 10}}>
       <Navbar.Brand className="p-0">
       <Nav.Link href="/">
         <img
@@ -24,11 +24,11 @@ function NavTabs() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
 
-        <MDBDropdown className="animated fadeInLeft">
-                <MDBDropdownToggle nav caret>
+        <MDBDropdown className="animated fadeInLeft" >
+                <MDBDropdownToggle nav caret >
                   <span className="mr-2" style={{ fontSize: "20px", color: "black" }}>Add</span>
                 </MDBDropdownToggle>
-                <MDBDropdownMenu>
+                <MDBDropdownMenu >
                   <MDBDropdownItem href="/createpost">Record</MDBDropdownItem>
                   <MDBDropdownItem href="/cassette">Cassette</MDBDropdownItem>
                   <MDBDropdownItem href="/disc">Disc</MDBDropdownItem>
