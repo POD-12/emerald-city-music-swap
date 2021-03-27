@@ -24,9 +24,11 @@ const FeaturedCards = (props) => {
   const scrollContainerStyle = { width: "200px", maxHeight: "82px" };
   const imagestyle = { width: "100%", height: "40vh", objectFit: "cover" };
   return (
+
     <MDBCardBody className="carbody text-center pt-0">
       <h2 className="font-weight-bold text-center my-5">Recent posts</h2>
       <MDBContainer>
+
         <MDBRow className="text-md-left d-flex justify-content-center">
           {props.records.length > 0
             ? props.records.map((record) => {
@@ -75,7 +77,11 @@ const FeaturedCards = (props) => {
                           <span>Posted: {new Date().toLocaleDateString()}</span>
                         </h6>
 
-                        <MDBBtn onClick={() => props.handleDelete(record._id)}
+
+
+
+                        <MDBBtn
+
                           color="elegant"
                           className="align-center mt-3"
                           style={{ borderRadius: "2rem" }}
@@ -86,6 +92,7 @@ const FeaturedCards = (props) => {
                       </MDBCardBody>
                     </MDBCard>
                   </MDBCol>
+
 
                   
                 );

@@ -23,7 +23,7 @@ const FeaturedCards = (props) => {
         {props.records.length > 0
           ? props.records.map((record) => {
               return (
-                
+
                 <MDBCol
                   sm="5"
                   lg="3"
