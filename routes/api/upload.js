@@ -26,10 +26,7 @@ router.post("/", upload.single("avatar"), function (req, res) {
 
   console.log(req.body);
   db.Record.create(req.body).then(function (result) {
-    res.redirect("/createpost");
-    // const history = useHistory;
-    // history.push("userPage");
-
+    res.redirect("/userPage");
   });
 });
 
