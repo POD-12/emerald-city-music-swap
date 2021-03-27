@@ -12,13 +12,26 @@ const LandingPage = () => {
         })
     },[])
 
+
+   const handleDelete = (record) =>{
+console.log(record)
+      API.deleteOneRecord(record)
+      .then(res =>{
+        console.log(res.data)
+        setRecords( records.filter((thisRecord) => thisRecord._id !== record) )
+        
+      })
+    }
+
+    
+      
+ 
+
     return (
       <div> 
-      <h1 className="text-center mt-5 mb-5">
-     {/* Welcome! name of user? */}
- </h1>
+      <h1 className="text-center mt-5 mb-5"></h1>
   {console.log(records)}
-  <FeaturedCards records = {records} />
+  <FeaturedCards records = {records} handleDelete = {handleDelete} />
 </div>
     )
 }

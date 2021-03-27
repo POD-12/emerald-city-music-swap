@@ -3,6 +3,7 @@ const uploadController = require("../../controllers/uploadController");
 const multer = require("multer");
 const path = require("path");
 const db = require("../../models");
+// import { useHistory } from "react-router-dom";
 
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -16,6 +17,7 @@ var storage = multer.diskStorage({
 
 var upload = multer({ storage: storage });
 //   const authenticateUser = require("../middleware/authenticateUser");
+
 
 router.post("/", upload.single("avatar"), function (req, res) {
   console.log(req.file);

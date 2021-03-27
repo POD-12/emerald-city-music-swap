@@ -18,7 +18,7 @@ const jwtSign = util.promisify( jwt.sign );
 
 //get currently validated user
 router.post("/authenticated", authenticateUser, (req,res)=>{
-  console.log(req.user);
+  // console.log(req.user);
   res.json(req.user);
 });
 
