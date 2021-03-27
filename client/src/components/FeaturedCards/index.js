@@ -12,8 +12,15 @@ import {
 } from "mdbreact";
 import "./scrollbar.css";
 
+
+
 // {/* we want to be able to have multiple posts two on a row? */}
 const FeaturedCards = (props) => {
+  
+  
+  
+
+
   const scrollContainerStyle = { width: "200px", maxHeight: "82px" };
   const imagestyle = { width: "100%", height: "40vh", objectFit: "cover" };
   return (
@@ -25,6 +32,7 @@ const FeaturedCards = (props) => {
             ? props.records.map((record) => {
                 return (
                   <MDBCol
+                  key={record._id}
                     sm="5"
                     lg="3"
                     md="6"
@@ -67,7 +75,7 @@ const FeaturedCards = (props) => {
                           <span>Posted: {new Date().toLocaleDateString()}</span>
                         </h6>
 
-                        <MDBBtn
+                        <MDBBtn onClick={() => props.handleDelete(record._id)}
                           color="elegant"
                           className="align-center mt-3"
                           style={{ borderRadius: "2rem" }}
