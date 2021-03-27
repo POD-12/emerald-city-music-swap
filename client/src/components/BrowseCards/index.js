@@ -23,8 +23,7 @@ const FeaturedCards = (props) => {
         {props.records.length > 0
           ? props.records.map((record) => {
               return (
-              
-               
+
                 <MDBCol
                   sm="5"
                   lg="3"
@@ -68,7 +67,7 @@ const FeaturedCards = (props) => {
                         <span>Posted: {new Date().toLocaleDateString()}</span>
                       </h6>
 
-                      <MDBBtn
+                      <MDBBtn onClick={() => props.handleDelete(record._id)}
                         color="elegant"
                         className="align-center mt-3"
                         style={{ borderRadius: "2rem" }}
