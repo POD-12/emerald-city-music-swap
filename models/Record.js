@@ -43,10 +43,10 @@ const recordSchema = new Schema({
         type: String,
         maxlength: 50,
     },
-    recordOwner: {
-        type: Schema.Types.ObjectId,
-        ref: 'users',
-    },
+    // recordOwner: {
+    //     type: Schema.Types.ObjectId,
+    //     ref: 'users',
+    // },
     image: { type: String }
 });
 
