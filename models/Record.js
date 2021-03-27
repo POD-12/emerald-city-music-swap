@@ -43,7 +43,7 @@ const recordSchema = new Schema({
         type: String,
         maxlength: 50,
     },
-    image:{type: String}
+    image:{type: String},
 });
 
 const Record = mongoose.model("Record", recordSchema);
