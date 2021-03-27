@@ -33,7 +33,8 @@ router.post("/login", validateBodyWith(loginValidator), async(req,res)=>{
   try{
     const user = 
       await User
-      .findOne({email});
+      .findOne({email})
+      .populate('records');
     if(!user){
       //user not found by email
       return res.status(404).json({default:"your email or password is invalid"})
