@@ -80,7 +80,7 @@ const FeaturedCards = (props) => {
 
 
 
-                        <MDBBtn
+                        <MDBBtn onClick={() => props.handleDelete(record._id)}
 
                           color="elegant"
                           className="align-center mt-3"
