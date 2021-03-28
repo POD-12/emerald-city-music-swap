@@ -30,7 +30,9 @@ function CreatePost() {
               </MDBCol>
               <MDBCol md="4">
                 <div>
-                  <select className="browser-default custom-select" name="recordGenre" >
+                  
+                  <select className="browser-default custom-select" name="recordGenre">
+                    <option value="" selected disabled>Genre</option>
                     <option value="Alternative">Alternative</option>
                     <option value="Blues">Blues</option>
                     <option value="Classical">Classical</option>
@@ -54,7 +56,8 @@ function CreatePost() {
               </MDBCol>
               <MDBCol md="3">
                 <div>
-                  <select className="browser-default custom-select" name="recordCondition" >
+                  <select  className="browser-default custom-select" name="recordCondition" >
+                    <option value="" selected disabled>Condition</option>
                     <option value="Mint">Mint</option>
                     <option value="Near Mint">Near Mint</option>
                     <option value="Excellent">Excellent</option>
