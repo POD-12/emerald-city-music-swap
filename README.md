@@ -69,6 +69,7 @@ Add and Delete Record Postings
 2. Click 'Recent' in the Navbar.
 3. Choose an album to delete.
 4. Click the 'Delete' button on the album card to remove posting.
+
 NOTE: CASSETTE, DISC, AND CHART OPTIONS IN THE ADD DROP DOWN ARE NOT FUNCTIONAL AT THIS TIME (03/16/1988).
 
 ![Add/Delete Demo]()
@@ -80,6 +81,7 @@ Browse Records
 3. To browse by 'Artist name', make sure the other form fields are clear type the artist name into the corresponging form.
 3. To browse by 'Album', make sure the other form fields are clear type the album name into the corresponging form.
 4. To browse by genre, make sure the other form fields are clear and select the genre from the dropdown menu.
+
 NOTE: CONFLICTING FORM FIELDS WILL YIELD NO RESULTS, FIELDS ARE CASE SENSITIVE.
 
 ![Browse Demo]()
