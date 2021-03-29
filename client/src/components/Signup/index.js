@@ -40,7 +40,7 @@ function Signup() {
             <p>
               To keep connected with us please login with your personal info
             </p>
-            <MDBBtn color="white" style={{ borderRadius: "2rem" }}>
+            <MDBBtn color="white" style={{ borderRadius: ".25rem" }}>
               Login
             </MDBBtn>
           </div>
@@ -109,7 +109,7 @@ function Signup() {
               ref = {passwordRef}
             />
             <div className="text-center mt-4 mb-5">
-              <MDBBtn rounded type="submit" color="elegant" style={{ borderRadius: "2rem" }}>
+              <MDBBtn rounded type="submit" color="elegant" style={{ borderRadius: ".25rem" }}>
                 Sign up
               </MDBBtn>
             </div>

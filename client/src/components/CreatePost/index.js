@@ -95,7 +95,7 @@ function CreatePost() {
 
             </div>
             <div className="text-center text-md-center">
-              <MDBBtn className="mb-5"type="submit" color="elegant" style={{ borderRadius: "2rem" }}   >
+              <MDBBtn className="mb-5"type="submit" color="elegant" style={{ borderRadius: ".25rem" }}   >
                 Create Post
             </MDBBtn>
             </div>

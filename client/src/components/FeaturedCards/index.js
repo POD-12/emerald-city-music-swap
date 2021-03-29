@@ -21,7 +21,8 @@ const FeaturedCards = (props) => {
   return (
 
     <MDBCardBody className="carbody text-center pt-0">
-      <h2 className="recent-header rounded p-2 m-0 font-weight-bolder text-center">Recent posts</h2>
+      <h2 className="elegant-color-dark text-white">Recent Posts</h2>
+            
       <MDBContainer>
 
         <MDBRow className="text-md-left d-flex justify-content-center">
@@ -79,7 +80,7 @@ const FeaturedCards = (props) => {
 
                           color="elegant"
                           className="align-center mt-3"
-                          style={{ borderRadius: "2rem" }}
+                          style={{ borderRadius: ".25rem" }}
                           size="sm"
                         >
                           Delete

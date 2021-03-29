@@ -26,7 +26,7 @@ function NavTabs() {
 
         <MDBDropdown className="animated fadeInLeft" >
                 <MDBDropdownToggle nav caret >
-                  <span className="mr-2" style={{ fontSize: "20px", color: "black" }}>Add</span>
+                  <span className="mr-2" style={{ fontSize: "20px", color: "black" }}>Post</span>
                 </MDBDropdownToggle>
                 <MDBDropdownMenu >
                   <MDBDropdownItem href="/createpost">Record</MDBDropdownItem>

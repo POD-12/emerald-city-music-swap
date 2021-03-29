@@ -22,7 +22,9 @@ const LandingPage = () => {
 
   return (
     <div>
-      <h1 className="text-center mt-5 mb-5"></h1>
+      <h1 className="text-center mt-5 mb-5">
+        <div></div>
+      </h1>
       {console.log(records)}
       <FeaturedCards records={records} handleDelete={handleDelete} />
     </div>
