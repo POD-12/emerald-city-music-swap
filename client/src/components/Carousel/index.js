@@ -7,9 +7,6 @@ import {
   MDBView,
   MDBMask,
 } from "mdbreact";
-// import photo2 from "../../images/photo2.jpg";
-// import photo3 from "../../images/photo3.jpg";
-// import photo1 from "../../images/photo1.jpg";
 import test1 from "../../images/test1.png";
 import test4 from "../../images/test4.png";
 import test5 from "../../images/test5.png";

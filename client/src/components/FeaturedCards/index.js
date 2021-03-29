@@ -14,12 +14,7 @@ import "./scrollbar.css";
 
 
 
-// {/* we want to be able to have multiple posts two on a row? */}
 const FeaturedCards = (props) => {
-  
-  
-  
-
 
   const scrollContainerStyle = { width: "200px", maxHeight: "82px" };
   const imagestyle = { width: "100%", height: "40vh", objectFit: "cover" };
