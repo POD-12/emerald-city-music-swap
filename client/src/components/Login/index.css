@@ -1,9 +1,0 @@
-.login-container {
-    background-image: url("../../images/BGimage.jpg");
-    background-size: cover;
-    background-blend-mode:overlay;
-    background-color: transparent;
-}
-.login-form {
-    background-color: rgb(255, 255, 255);
-}

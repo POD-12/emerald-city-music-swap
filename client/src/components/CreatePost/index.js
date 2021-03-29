@@ -1,13 +1,13 @@
 import { MDBBtn, MDBCol, MDBContainer, MDBRow, MDBInput } from "mdbreact";
-import "./post.css";
+
 
 function CreatePost() {
 
   return (
-    <MDBContainer className="create-post mt-5 mb-5 shadow-box-example rounded z-depth-1-half">
+    <MDBContainer className="mb-5">
       <MDBRow className="d-flex justify-content-center">
 
-        <MDBCol md="7" className="p-4 post-card shadow-box-example rounded z-depth-1-half mt-5 mb-5 ">
+        <MDBCol md="9" className="p-4 post-card shadow-box-example rounded z-depth-1-half mt-5 mb-5 ">
           <form className="custom-file" action="/api/recordImage" method="post" enctype="multipart/form-data">
             <h2 className="recent-header rounded p-2 m-1 font-weight-bolder text-center">Post A Record</h2>
             <MDBRow>
@@ -95,7 +95,7 @@ function CreatePost() {
 
             </div>
             <div className="text-center text-md-center">
-              <MDBBtn className="mb-5"type="submit" color="elegant" style={{ borderRadius: ".25rem" }}   >
+              <MDBBtn className="mb-5"type="submit" color="elegant" style={{ borderRadius: "2rem" }}   >
                 Create Post
             </MDBBtn>
             </div>

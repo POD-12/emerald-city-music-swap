@@ -103,7 +103,7 @@ function BrowseForm() {
             </MDBRow>
           </form>
           <div className="text-center text-md-center">
-            <MDBBtn type="submit" color="elegant" style={{ borderRadius: ".25rem" }} onClick={handleSubmit}>
+            <MDBBtn type="submit" color="elegant" style={{ borderRadius: "2rem" }} onClick={handleSubmit}>
               Search
             </MDBBtn>
           </div>

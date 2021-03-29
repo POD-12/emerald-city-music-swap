@@ -20,8 +20,8 @@ const FeaturedCards = (props) => {
   const imagestyle = { width: "100%", height: "40vh", objectFit: "cover" };
   return (
 
-    <MDBCardBody className="carbody text-center pt-0">
-      <h2 className="elegant-color-dark text-white">Recent Posts</h2>
+    <MDBCardBody className="carbody text-center mt-1 pt-0">
+      <h2 className="font-weight-bolder text-center">Recent posts</h2>
             
       <MDBContainer>
 

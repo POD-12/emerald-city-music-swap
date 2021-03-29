@@ -2,7 +2,6 @@ import React from "react";
 import {useRef} from 'react';
 import {useLogin} from "../../utils/auth";
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from "mdbreact";
-import "./index.css"
 
 function Login() {
 
@@ -29,7 +28,7 @@ function Login() {
 
   const login = useLogin();
   return (
-    <MDBContainer className="login-container shadow-box-example rounded z-depth-1-half mt-5 mb-5">
+    <MDBContainer className="mb-5">
       <MDBRow className=" d-flex justify-content-center">
       <MDBCol md="5 p-5 mt-5 mb-5 shadow-box-example rounded z-depth-1-half" className="login-form">
           <form onSubmit = {handleSubmit}>

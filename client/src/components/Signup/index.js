@@ -32,7 +32,7 @@ function Signup() {
   }
 
   return (
-    <MDBContainer className="shadow-box-example rounded z-depth-1-half mt-5 mb-5">
+    <MDBContainer className="shadow-box-example rounded z-depth-1-half mt-4 mb-5">
       <MDBRow>
         <MDBCol className="welcome-back-card gradient-custom" md="6 p-5">
           <div className="sign-in text-center text-white pt-5 m-5" id="sign-in">
@@ -40,7 +40,7 @@ function Signup() {
             <p>
               To keep connected with us please login with your personal info
             </p>
-            <MDBBtn color="white" style={{ borderRadius: ".25rem" }}>
+            <MDBBtn color="white" style={{ borderRadius: "2rem" }}>
               Login
             </MDBBtn>
           </div>
@@ -108,8 +108,8 @@ function Signup() {
               className="form-control"
               ref = {passwordRef}
             />
-            <div className="text-center mt-4 mb-5">
-              <MDBBtn rounded type="submit" color="elegant" style={{ borderRadius: ".25rem" }}>
+            <div className="text-center mt-4">
+              <MDBBtn rounded type="submit" color="elegant" style={{ borderRadius: "2rem" }}>
                 Sign up
               </MDBBtn>
             </div>

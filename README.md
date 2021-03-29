@@ -1,6 +1,6 @@
 <h1 align="center">Emerald City Music Swap</h1>
 <p align="center">
-    <img src="https://img.shields.io/github/repo-size/merikettapearl212/emerald_city_music_swap?style=for-the-badge"/>
+    <img src="https://img.shields.io/github/repo-size/POD-12/emerald-city-music-swap?style=for-the-badge"/>
     <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
     <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"/>
     <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white/" />
