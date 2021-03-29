@@ -42,9 +42,9 @@ const FeaturedCards = (props) => {
                     />
                   </MDBCard>
                   <MDBCard className="mt-2 mb-2">
-                    <MDBCardBody className="">
-                      <MDBCardTitle>{record.recordArtist}</MDBCardTitle>
-                      <h6>{record.recordAlbumName}</h6>
+                    <MDBCardBody>
+                      <MDBCardTitle className="mb-1">{record.recordArtist}</MDBCardTitle>
+                      <h5 className="dark-grey-text">{record.recordAlbumName}</h5>
                       <h6>Genre: {record.recordGenre}</h6>
                       <MDBIcon
                         icon="user-circle"

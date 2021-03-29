@@ -26,7 +26,7 @@ const FeaturedCards = (props) => {
   return (
 
     <MDBCardBody className="carbody text-center pt-0">
-      <h2 className="font-weight-bolder text-center">Recent posts</h2>
+      <h2 className="recent-header rounded p-2 m-0 font-weight-bolder text-center">Recent posts</h2>
       <MDBContainer>
 
         <MDBRow className="text-md-left d-flex justify-content-center">
@@ -52,9 +52,9 @@ const FeaturedCards = (props) => {
                       />
                     </MDBCard>
                     <MDBCard className="mt-2 mb-2">
-                      <MDBCardBody className="">
-                        <MDBCardTitle>{record.recordArtist}</MDBCardTitle>
-                        <h4>{record.recordAlbumName}</h4>
+                      <MDBCardBody>
+                        <MDBCardTitle className="mb-1">{record.recordArtist}</MDBCardTitle>
+                        <h5 className="dark-grey-text">{record.recordAlbumName}</h5>
                         <h6>Genre: {record.recordGenre}</h6>
                         <MDBIcon
                           icon="user-circle"

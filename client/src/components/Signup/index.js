@@ -36,7 +36,7 @@ function Signup() {
       <MDBRow>
         <MDBCol className="welcome-back-card gradient-custom" md="6 p-5">
           <div className="sign-in text-center text-white pt-5 m-5" id="sign-in">
-            <h1>Welcome Back!</h1>
+            <h1 className="font-weight-bolder">Welcome Back!</h1>
             <p>
               To keep connected with us please login with your personal info
             </p>
@@ -48,7 +48,7 @@ function Signup() {
         
         <MDBCol md="6 p-5">
           <form onSubmit={handleSubmit}>
-            <p className="h3 text-center mb-3 black-text">Create Account</p>
+            <h2 className="font-weight-bolder text-center">Create Account</h2>
             <div className="text-center mb-3">
               <a href="#!" className="fa-lg p-1 m-.5 tw-ic">
                 <MDBIcon
@@ -108,7 +108,7 @@ function Signup() {
               className="form-control"
               ref = {passwordRef}
             />
-            <div className="text-center mt-4">
+            <div className="text-center mt-4 mb-5">
               <MDBBtn rounded type="submit" color="elegant" style={{ borderRadius: "2rem" }}>
                 Sign up
               </MDBBtn>

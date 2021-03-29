@@ -1,8 +1,8 @@
 import React from "react";
 import {useRef} from 'react';
 import {useLogin} from "../../utils/auth";
-  import { MDBContainer, MDBRow, MDBCol, MDBBtn } from "mdbreact";
-
+import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from "mdbreact";
+import "./index.css"
 
 function Login() {
 
@@ -29,11 +29,11 @@ function Login() {
 
   const login = useLogin();
   return (
-    <MDBContainer className="mt-5 mb-5">
-      <MDBRow className="d-flex justify-content-center">
-      <MDBCol md="6 p-5 mb-5 shadow-box-example rounded z-depth-1-half">
+    <MDBContainer className="login-container shadow-box-example rounded z-depth-1-half mt-5 mb-5">
+      <MDBRow className=" d-flex justify-content-center">
+      <MDBCol md="5 p-5 mt-5 mb-5 shadow-box-example rounded z-depth-1-half" className="login-form">
           <form onSubmit = {handleSubmit}>
-            <p className="h4 text-center mb-4">Sign in</p>
+            <div className="h4 text-center mb-4"><MDBIcon icon="user-circle" size="4x"/></div>
             <label htmlFor="defaultFormLoginEmailEx" className="grey-text">
               Your email
             </label>

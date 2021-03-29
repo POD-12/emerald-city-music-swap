@@ -1,4 +1,3 @@
-
 import Home from "./pages/Home";
 import NavTabs from "./components/NavTabs";
 import Footer from "./components/Footer";
@@ -10,7 +9,7 @@ import PrivateRoute from "./components/PrivateRoute";
 import LandingPage from "./pages/LandingPage";
 import BrowseForm from "./components/BrowseForm";
 import CreatePost from "./components/CreatePost";
-import {Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 
 
 

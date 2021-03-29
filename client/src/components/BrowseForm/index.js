@@ -53,9 +53,9 @@ function BrowseForm() {
   return (
     <div >
       <MDBRow className="d-flex justify-content-center pt-4">
-        <MDBCol md="9" className="shadow-box-example rounded z-depth-1-half md-0 mb-3 ">
+        <MDBCol md="9" className="shadow-box-example rounded z-depth-1-half md-0 ">
           <form>
-            <p className="h3 text-center mb-3 black-text">Browse</p>
+          <h2 className="recent-header rounded p-2 m-1 font-weight-bolder text-center">Browse Records</h2>
             <MDBRow>
               <MDBCol md="6">
                 <div className="form-group">
@@ -73,6 +73,7 @@ function BrowseForm() {
                 <div className="form-group">
 
                   <select className="browser-default custom-select" name="genre" onChange={handleChange} >
+                    <option value="" selected disabled>Genre</option>
                     <option value="Alternative">Alternative</option>
                     <option value="Blues">Blues</option>
                     <option value="Classical">Classical</option>

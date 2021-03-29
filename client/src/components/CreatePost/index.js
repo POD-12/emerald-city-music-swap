@@ -1,17 +1,15 @@
 import { MDBBtn, MDBCol, MDBContainer, MDBRow, MDBInput } from "mdbreact";
-// import React, {useState} from "react";
-// import API from "../../utils/API"
-
+import "./post.css";
 
 function CreatePost() {
 
   return (
-    <MDBContainer className="mt-4 mb-5">
+    <MDBContainer className="create-post mt-5 mb-5 shadow-box-example rounded z-depth-1-half">
       <MDBRow className="d-flex justify-content-center">
 
-        <MDBCol md="9" className=" shadow-box-example rounded z-depth-1-half md-0 mb-3 ">
+        <MDBCol md="7" className="p-4 post-card shadow-box-example rounded z-depth-1-half mt-5 mb-5 ">
           <form className="custom-file" action="/api/recordImage" method="post" enctype="multipart/form-data">
-            <p className="h3 text-center mb-3 black-text">Post A Record</p>
+            <h2 className="recent-header rounded p-2 m-1 font-weight-bolder text-center">Post A Record</h2>
             <MDBRow>
               <MDBCol md="6">
                 <div className="form-group">
@@ -23,12 +21,12 @@ function CreatePost() {
                   <input type="text" className="form-control" placeholder="Album Name" name="recordAlbumName" />
                 </div>
               </MDBCol>
-              <MDBCol md="6">
+              <MDBCol md="5">
                 <div className="form-group">
                   <input type="text" className="form-control" placeholder="Your Email" name="recordPosterContact" />
                 </div>
               </MDBCol>
-              <MDBCol md="4">
+              <MDBCol md="4" className="mb-3">
                 <div>
                   
                   <select className="browser-default custom-select" name="recordGenre">
@@ -73,6 +71,7 @@ function CreatePost() {
 
             <MDBInput type="textarea" label="Other record details" name="recordComments" className="rounded" />
 
+
             <div className="input-group">
               <div className="input-group-prepend">
                 {/* <span className="input-group-text" id="inputGroupFileAddon01">
@@ -80,7 +79,10 @@ function CreatePost() {
                   </span> */}
               </div>
 
+
+                  
               <MDBInput
+              
                 type="file"
                 name="avatar"
                 className="custom-file-input"
@@ -93,13 +95,13 @@ function CreatePost() {
 
             </div>
             <div className="text-center text-md-center">
-              <MDBBtn type="submit" color="elegant" style={{ borderRadius: "2rem" }}   >
+              <MDBBtn className="mb-5"type="submit" color="elegant" style={{ borderRadius: "2rem" }}   >
                 Create Post
             </MDBBtn>
             </div>
 
           </form>
-          <div className="mb-5"></div>
+         
         </MDBCol>
       </MDBRow>
 
