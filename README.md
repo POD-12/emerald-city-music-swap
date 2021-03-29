@@ -1,6 +1,6 @@
 <h1 align="center">Emerald City Music Swap</h1>
 <p align="center">
-    <img src="https://img.shields.io/github/repo-size/merikettapearl212/emerald_city_music_swap?style=for-the-badge"/>
+    <!-- <img src="https://img.shields.io/github/repo-size/merikettapearl212/emerald_city_music_swap?style=for-the-badge"/> -->
     <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
     <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"/>
     <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white/" />
@@ -69,7 +69,7 @@ Add and Delete Record Postings
 2. Click 'Recent' in the Navbar.
 3. Choose an album to delete.
 4. Click the 'Delete' button on the album card to remove posting.
-NOTE: TAPE, .
+NOTE: CASSETTE, DISC, AND CHART OPTIONS IN THE ADD DROP DOWN ARE NOT FUNCTIONAL AT THIS TIME (03/16/1988).
 
 ![Add/Delete Demo]()
 
@@ -90,34 +90,33 @@ No installation is required for running the deployed version of ECMS. Simply cli
 
 When downloading and running the application locally, use the following steps:
 
+1. Install MongoDB Atlas and Robo 3T workbench using the directions outlined in the '[mongoDB Documentation](https://docs.mongodb.com/manual/installation/)' and '[Robo 3T Documentation](https://robomongo.org/)'.
+2. Clone the repository to your computer.
+3. Connect the repository to your Robo 3T by logging into Robo 3T, right click on 'New Connection', select 'Create Database' and name it "hipsterapp".
+4. Open a new terminal instance in the ECMS code file and run "npm i" to install the npm packages needed to run the program.
+
 ## Testing
 To test the deployed app, click the '[Deployed Application Link](https://emerald-city-music-swap.herokuapp.com/)' provided in '[Location](#location)' and run through the steps listed in '[Usage Instructions](#usage-instructions)'.
 
 To test ECMS code locally on your computer, begin by completing the local installation process. Then do the following: 
-1. After logging into Robo 3T, right click on 'New Connection', select 'Create Database' and name it "hipsterapp".
-2. Next, using the CLI, start the server by running the command 'npm start'.
-3. Open another instance of your CLI and in the new instances execute the command "node scripts/SeedDB.js" to run the seed file.
-3. If the seed file populates the tables in your Robo 3T you have a successful connection to your local database
+1. Using the CLI, start the server by running the command 'npm start'.
+2. Open another instance of your CLI and in the new instances execute the command "node scripts/SeedDB.js" to run the seed file.
+3. If the seed file populates the collection in your Robo 3T 'hipsterapp' database, then you have a successful connection to your local database.
 4. Additional testing of api routes can be completed via Postman Application. Instructions for Postman installation and usage can be found at https://www.postman.com/.
 
 ## Future Development
 
-Ideas for future development...
-
-
-Conditional Rendering of delete buttons on item cards
-
-Additional UX/UI development
-
-In app messaging of other users using socket i/o
-
-Include other types of media items to share and post
-Cassette Tapes
-Compact Discs
-Music Charts
-Sheet Music
-Music Books
-
+Additional goals and application features for future devlopment include:
+- Conditional Rendering of delete buttons on item cards
+- Additional UX/UI development
+- Remove case sensitivity of browse forms
+- In app messaging of other users using socket i/o
+- Include other types of media items to share and post
+    - Cassette Tapes
+    - Compact Discs
+    - Music Charts
+    - Sheet Music
+    - Music Books
 
 ## Contributors
 
@@ -130,6 +129,8 @@ Music Books
 
 - Lessons from UW Full Stack Flex Boot Camp.
 - Insights from instructor Anthony Brown.
+- TA help from Ming Ho and Jamey Gronewald.
+- Tutoring from Phil Loy and Namita Shenai.
 
 ## Point of Contact
 <!-- possibly set it up for group email -->
