@@ -54,7 +54,7 @@ function Login() {
             />
             <div className="text-center mt-4">
 
-              <MDBBtn color="black" type="submit" style={{ borderRadius: ".25rem" }}>
+              <MDBBtn color="black" type="submit" style={{ borderRadius: "2rem" }}>
 
                 Login
               </MDBBtn>
