@@ -49,7 +49,7 @@ In this MVP a user can...
 3. Browse available records by artist name, title, or genre.
 4. Remove posts.
 
-![Landing Page Stillshot]()
+![Landing Page Stillshot](https://github.com/POD-12/emerald-city-music-swap/blob/main/readme-imgs/readme-stills/ecms-landing-page.png)
 
 ## Usage Instructions
 
@@ -61,7 +61,7 @@ Account Creation, Login, and Logout
 4. To create login to an existing account, click 'Login' and enter your email and password in the form- then click the 'Login' button.
 5. To Logout while signed in, click 'Account' and then click 'Logout'.
 
-![Account Creation Demo]()
+![Account Creation Demo](https://github.com/POD-12/emerald-city-music-swap/blob/main/readme-imgs/readme-gifs/ecms-signup-logout-signin-demo.gif)
 
 Add and Delete Record Postings
 
@@ -72,7 +72,7 @@ Add and Delete Record Postings
 
 NOTE: CASSETTE, DISC, AND CHART OPTIONS IN THE ADD DROP DOWN ARE NOT FUNCTIONAL AT THIS TIME (03/16/1988).
 
-![Add/Delete Demo]()
+![Add/Delete Demo](https://github.com/POD-12/emerald-city-music-swap/blob/main/readme-imgs/readme-gifs/ecms-add-delete-demo.gif)
 
 Browse Records
 
@@ -84,7 +84,7 @@ Browse Records
 
 NOTE: CONFLICTING FORM FIELDS WILL YIELD NO RESULTS, FIELDS ARE CASE SENSITIVE.
 
-![Browse Demo]()
+![Browse Demo](https://github.com/POD-12/emerald-city-music-swap/blob/main/readme-imgs/readme-gifs/ecms-browse-demo.gif)
 
 ## Installation
 
